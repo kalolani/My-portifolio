@@ -8,7 +8,7 @@ import { MdOutlineLightMode } from "react-icons/md";
 function Navbar() {
   const linkClassNames = ({ isActive }) =>
     isActive
-      ? "bg-yellow-700 inline-block p-4 rounded-full"
+      ? "bg-yellow-500 inline-block p-4 rounded-full"
       : "bg-stone-800 inline-block p-4 rounded-full";
 
   return (
