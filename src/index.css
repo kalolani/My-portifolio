@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Outfit;
+}
+
+body {
+  min-height: 100vh;
+  /* font-family: Outfit; */
+}
+/* 
+.active-link {
+  @apply text-red-600;
+}
+.default-link {
+  @apply bg-stone-800;
+} */
