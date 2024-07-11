@@ -1,0 +1,38 @@
+a {
+  background-color: rgb(41 37 36);
+  display: inline-block;
+  padding: 1rem;
+  border-radius: 9999px;
+  transition: all 0.5s;
+}
+a:hover {
+  background-color: rgb(234 179 8);
+}
+
+.position {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.active {
+  background-color: rgb(234 179 8);
+}
+.span {
+  transform: translateX(5px);
+  transition: all 0.015s;
+}
+.link:hover {
+  visibility: invisible;
+}
+.link:hover .span {
+  visibility: visible;
+  right: 0%;
+  padding: 0.81rem 1.5rem;
+  padding-right: 1rem;
+  z-index: 50;
+  background-color: rgb(234 179 8);
+  text-transform: uppercase;
+  transform: translateX(0px);
+}

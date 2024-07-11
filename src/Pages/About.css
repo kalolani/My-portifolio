@@ -1,0 +1,20 @@
+.text-container::before {
+  content: "Resume";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1; /* Ensure the background text is behind the main text */
+  font-size: 7rem; /* Larger size for the background text */
+  font-weight: 800;
+  text-transform: uppercase;
+  color: rgb(68 64 60); /* Light color for the background text */
+  font-family: "poppins";
+  letter-spacing: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.5; /* Adjust opacity for better visibility */
+  pointer-events: none; /* Prevent interaction with the background text */
+}

@@ -1,36 +1,46 @@
 import Navbar from "../Components/Navbar";
 import Polygon from "../Components/Polygon";
+import { HiMiniArrowSmallRight } from "react-icons/hi2";
+import { IoMenuSharp } from "react-icons/io5";
+import { FaRegSun } from "react-icons/fa";
+
+import "./Home.css";
 
 function Home() {
   return (
-    <div className="relative h-full text-slate-50 overflow-hidden">
-      <div className="absolute absolute top-1/2 left-3/5 transform -translate-x-1/2 -translate-y-1/2 w-128 ml-24">
-        <div className="flex gap-6">
-          <div className="block w-6 h-1 bg-yellow-500 mt-6"></div>
-          <h1 className="font-poppins text-5xl tracking-wider font-bold mb-2">
-            <span className="text-yellow-500 font-poppins text-5xl tracking-wider font-bold mb-2 inline-block">
-              {" "}
-              I'M KALEAB GEMECHU.
-            </span>
-            <br />
-            WEB DEVELOPER
-          </h1>
-        </div>
-        <p className="font-poppins text-left tracking-wider leading-loose mt-4">
-          I'm an Ethiopian based full stack web developer focused on crafting
-          clean & user‑friendly experiences, I am passionate about building
-          excellent software that improves the lives of those around me.
-        </p>
-        <button>MORE ABOUT ME</button>
+    <div className="relative w-full h-full z-30 phone:w-full">
+      <div className="absolute top-12 right-8 z-50 bg-stone-800 p-4 rounded-full hover:cursor-pointer hover:bg-yellow-500 phone:invisible laptop:visible">
+        <FaRegSun size={18} color="white" />
       </div>
       <Polygon />
       <Navbar />
-
-      <div className="absolute h-full w-1/3 top-10 left-10">
-        <img
-          src="kale-ab.png"
-          className="h-144 w-full block rounded-3xl shadow-md shadow-black"
-        />
+      <div className="grid grid-cols-1fr-2fr gap-0 h-full w-full z-30 phone:grid-cols-1 laptop:grid-cols-1fr-2fr">
+        <div className="self-center justify-self-start ml-10 z-30 phone:justify-self-center phone:ml-0 laptop:justify-self-start laptop:ml-10 z-30 ">
+          <img
+            src="kale-ab.png"
+            className="inline-block h-90 rounded-3xl shadow-lg shadow-black z-30 phone:mt-2 phone:h-52 w-52 rounded-full border-4 border-stone-800 laptop:h-90 laptop:w-full laptop:rounded-3xl border-none"
+          />
+        </div>
+        <div className="self-center justify-self-start ml-10 phone:justify-self-end  laptop:justify-center">
+          <h1 className="font-poppins text-white text-5xl tracking-wider uppercase font-bold phone:text-2xl ptab:text-3xl laptop:text-5xl">
+            <span className="inline-block font-poppins text-yellow-500 tracking-wider uppercase font-bold mb-4">
+              i'm kaleab gemechu.
+            </span>
+            <br />
+            web developer
+          </h1>
+          <p className="font-poppins text-white w-2/3 leading-loose mt-4 phone:w-full phone:text-center ptab:text-xl laptop:text-lg laptop:w-3/4 laptop:text-start">
+            I'm an Ethiopian based full-stack web developer focused on crafting
+            clean & user‑friendly experiences, I am passionate about building
+            excellent software that improves the lives of those around me.
+          </p>
+          <div className="flex justify-start items-center mt-4 mb-4 laptop:mt-10">
+            <button className="custom-button btn-arrow text-white border-2 px-4 py-2 rounded-lg border-yellow-400 flex items-center">
+              <span className="font-poppins">more about me</span>
+              <HiMiniArrowSmallRight size={30} className="btn-arrow" />
+            </button>
+          </div>
+        </div>
       </div>
     </div>
   );
