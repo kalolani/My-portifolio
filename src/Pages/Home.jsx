@@ -1,7 +1,6 @@
 import Navbar from "../Components/Navbar";
 import Polygon from "../Components/Polygon";
 import { HiMiniArrowSmallRight } from "react-icons/hi2";
-import { IoMenuSharp } from "react-icons/io5";
 import { FaRegSun } from "react-icons/fa";
 
 import "./Home.css";

@@ -76,23 +76,23 @@ function About() {
   console.log(activeTechnic);
   console.log(activeClass);
   return (
-    <div className="text-slate-50">
+    <div className="text-slate-50 w-full phone:w-full">
       <div className="fixed top-12 right-6 z-50 bg-stone-800 p-4 rounded-full hover:cursor-pointer hover:bg-yellow-500 phone:invisible laptop:visible">
         <FaRegSun size={18} color="white" />
       </div>
       <Navbar />
       <div className="relative text-container">
-        <h1 className="font-poppins text-3xl text-center my-20 uppercase text-6xl font-extrabold text-gray-50">
+        <h1 className="font-poppins text-3xl text-center my-20 uppercase text-6xl font-extrabold text-gray-50 phone:text-4xl ptab:text-5xl laptop:text-6xl laptop:my-16">
           about <span className="text-yellow-500 font-poppins">me</span>
         </h1>
       </div>
-      <div className="font-poppins grid grid grid-cols-2 max-w-6xl m-auto gap-6">
-        <div>
-          <h3 className="uppercase font-poppins mb-8 text-2xl font-bold">
+      <div className="font-poppins grid grid grid-cols-2 max-w-6xl m-auto gap-6 phone:grid-cols-1 phone:m-auto laptop:grid-cols-2">
+        <div className="">
+          <h3 className="uppercase font-poppins mb-8 text-2xl font-bold phone:text-xl phone:text-start phone:px-6 mdphone:text-center laptop:text-2xl laptop:text-start laptop:px-0">
             personal information
           </h3>
-          <div className="grid grid-cols-2">
-            <div className="flex flex-col gap-6">
+          <div className="grid grid-cols-2 phone:px-8 phone:grid-cols-1 phone:gap-6 mtab:grid-cols-2 tablet:gap-20 laptop:gap-0 laptop:px-0">
+            <div className="flex flex-col gap-6 mdphone:items-center mtab:items-start tablet:items-end laptop:items-start">
               <p className="font-poppins">
                 <span className="font-poppins text-gray-200"> First Name</span>{" "}
                 : <span className="bold font-poppins">Kaleab</span>
@@ -114,8 +114,8 @@ function About() {
                 <span className="bold font-poppins">Available</span>
               </p>
             </div>
-            <div className="flex flex-col gap-6">
-              <p className="font-poppins">
+            <div className="flex flex-col gap-6 mdphone:items-center mtab:items-start">
+              <p className="font-poppins phone:text-base">
                 <span className="font-poppins text-gray-200">Address</span> :{" "}
                 <span className="bold font-poppins">Dilla</span>
               </p>
@@ -123,9 +123,11 @@ function About() {
                 <span className="font-poppins text-gray-200">Phone</span> :{" "}
                 <span className="bold font-poppins">+251916163516</span>
               </p>
-              <p className="font-poppins">
+              <p className="font-poppins phone:text-base">
                 <span className="font-poppins text-gray-200"> Email</span> :{" "}
-                <span className="bold font-poppins">kgemechu908@gmail.com</span>
+                <span className="bold font-poppins ">
+                  kgemechu908@gmail.com
+                </span>
               </p>
               <p className="font-poppins">
                 <span className="font-poppins text-gray-200">Github</span> :{" "}
@@ -141,12 +143,14 @@ function About() {
               </p>
             </div>
           </div>
-          <button className="inline-block custom-button btn-arrow text-white border-2 px-4 py-2 rounded-lg border-yellow-400 flex items-center">
-            <span className="font-poppins uppercase">downoad cv</span>
-            <HiMiniArrowSmallRight size={30} className="btn-arrow" />
-          </button>
+          <div className="flex justify-start items-center mt-4 mb-4 phone:justify-start phone:px-6 mdphone:justify-center mtab:justify-start tablet:justify-center tablet:mt-10 laptop:justify-start">
+            <button className="custom-button btn-arrow text-white border-2 px-4 py-2 rounded-lg border-yellow-400 flex items-center">
+              <span className="font-poppins">more about me</span>
+              <HiMiniArrowSmallRight size={30} className="btn-arrow" />
+            </button>
+          </div>
         </div>
-        <div className="font-poppins grid grid-cols-2 gap-6 px-6">
+        <div className="font-poppins grid grid-cols-2 gap-6 px-6 phone:grid-cols-1 ptab:grid-cols-2">
           <div className="border-2 border-stone-800 rounded-lg px-8 py-6">
             <h1 className="font-poppins text-4xl font-extrabold text-yellow-500">
               2 <sup>+</sup>
@@ -197,8 +201,8 @@ function About() {
           </div>
         </div>
       </div>
-      <div className="font-poppins max-w-6xl m-auto my-20 py-16 bg-stone-900 rounded-2xl px-6">
-        <div className="grid grid-cols-2 gap-6">
+      <div className="font-poppins max-w-6xl m-auto my-20 py-16 bg-stone-900 rounded-2xl px-6 phone:px-4 ">
+        <div className="grid grid-cols-2 gap-6 phone:grid-cols-1 btablet:grid-cols-2">
           <div>
             <ul className="flex flex-col gap-4">
               <Link
@@ -255,7 +259,7 @@ function About() {
               </Link>
             </ul>
           </div>
-          <div className="bg-stone-600 pt-4 px-4 rounded-lg">
+          <div className="bg-stone-600 pt-4 px-4 rounded-lg py-4 ">
             <h1 className="font-poppins uppercase font-extrabold tracking-wide text-center text-5xl mb-6">
               skills
             </h1>
@@ -263,7 +267,6 @@ function About() {
           </div>
         </div>
       </div>
-      <p>kaleab</p>
     </div>
   );
 }

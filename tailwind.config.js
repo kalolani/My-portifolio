@@ -39,8 +39,10 @@ export default {
       // => @media (min-width: 640px) { ... }
       mdphone: "400px",
       ptab: "500px",
+      mtab: "650px",
       tablet: "768px",
       // => @media (min-width: 768px) { ... }
+      btablet: "850px",
 
       laptop: "1024px",
       // => @media (min-width: 1024px) { ... }
