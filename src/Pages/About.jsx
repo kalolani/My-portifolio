@@ -145,7 +145,7 @@ function About() {
           </div>
           <div className="flex justify-start items-center mt-4 mb-4 phone:justify-start phone:px-6 mdphone:justify-center mtab:justify-start tablet:justify-center tablet:mt-10 laptop:justify-start">
             <button className="custom-button btn-arrow text-white border-2 px-4 py-2 rounded-lg border-yellow-400 flex items-center">
-              <span className="font-poppins">more about me</span>
+              <span className="font-poppins uppercase">download cv</span>
               <HiMiniArrowSmallRight size={30} className="btn-arrow" />
             </button>
           </div>
