@@ -1,5 +1,5 @@
-.text-containers::before {
-  content: "resume";
+.contact-container::before {
+  content: "contacts";
   position: absolute;
   top: 0;
   left: 0;
@@ -18,20 +18,21 @@
   opacity: 0.5; /* Adjust opacity for better visibility */
   pointer-events: none; /* Prevent interaction with the background text */
 }
+
 @media (min-width: 320px) {
-  .text-container::before {
-    font-size: 4rem;
-    letter-spacing: 5px;
+  .contact-container::before {
+    font-size: 3rem;
+    letter-spacing: 6px;
   }
 }
 @media (min-width: 500px) {
-  .text-container::before {
+  .contact-container::before {
     font-size: 5rem;
     letter-spacing: 6px;
   }
 }
 @media (min-width: 1024px) {
-  .text-container::before {
+  .contact-container::before {
     font-size: 7rem;
     letter-spacing: 8px;
   }

@@ -1,6 +1,6 @@
 import Navbar from "../Components/Navbar";
-import "./projects.css";
 import { FaRegSun } from "react-icons/fa";
+import "./projects.css";
 
 function Projects() {
   return (
@@ -14,9 +14,9 @@ function Projects() {
           my <span className="text-yellow-500 font-poppins">portfolio</span>
         </h1>
       </div>
-      <div className="mb-24">
+      <div className="mb-8">
         <div className="max-w-6xl m-auto grid grid-cols-3 gap-x-8 gap-y-16 items-center justify-items-center phone:grid-cols-1 phone:px-4 tablet:grid-cols-2 laptop:grid-cols-3 laptop:px-0">
-          <div className="relative parent rounded-lg border-yellow-950  shadow-custom-green overflow-hidden  hover:cursor-pointer">
+          <div className="z-0 relative parent rounded-lg border-yellow-950  shadow-custom-green overflow-hidden  hover:cursor-pointer">
             <div className="img-container grid items-center justify-items-center">
               <p className="font-poppins uppercase w-3/4 self-center text-center">
                 landing page for tour organizer company
@@ -29,9 +29,9 @@ function Projects() {
                 visit
               </a>
             </div>
-            <img src="../natours.PNG" className="scale-down-up z-0 img" />
+            <img src="../natours.PNG" className="z-0 scale-down-up img" />
           </div>
-          <div className="relative parent rounded-lg border-yellow-950 shadow-custom-green overflow-hidden  hover:cursor-pointer ">
+          <div className="z-0 relative parent rounded-lg border-yellow-950 shadow-custom-green overflow-hidden  hover:cursor-pointer ">
             {" "}
             <div className="img-container grid items-center justify-items-center">
               <p className="font-poppins uppercase w-3/4 self-center text-center">
@@ -45,9 +45,9 @@ function Projects() {
                 visit
               </a>
             </div>
-            <img src="../nexter.PNG" className="scale-down-up" />
+            <img src="../nexter.PNG" className="z-0 scale-down-up" />
           </div>
-          <div className="relative parent rounded-lg border-yellow-950 shadow-custom-green  overflow-hidden  hover:cursor-pointer">
+          <div className="z-0 relative parent rounded-lg border-yellow-950 shadow-custom-green overflow-hidden  hover:cursor-pointer">
             {" "}
             <div className="img-container grid items-center justify-items-center">
               <p className="font-poppins uppercase w-3/4 self-center text-center">
@@ -61,7 +61,7 @@ function Projects() {
                 visit
               </a>
             </div>
-            <img src="../omnifood.PNG" className="scale-down-up" />
+            <img src="../omnifood.PNG" className="z-0 scale-down-up" />
           </div>
           <div className="relative parent rounded-lg border-yellow-950 shadow-custom-green  overflow-hidden  hover:cursor-pointer">
             {" "}
@@ -77,7 +77,7 @@ function Projects() {
                 visit
               </a>
             </div>
-            <img src="../project-5.PNG" className="scale-down-up" />
+            <img src="../project-5.PNG" className="z-0 scale-down-up" />
           </div>
           <div className="relative parent rounded-lg border-yellow-950 shadow-custom-green  overflow-hidden  hover:cursor-pointer">
             {" "}
@@ -94,7 +94,7 @@ function Projects() {
                 visit
               </a>
             </div>
-            <img src="../food-del.PNG" className="scale-down-up" />
+            <img src="../food-del.PNG" className="z-0 scale-down-up" />
           </div>
           <div className="relative parent rounded-lg border-yellow-950 shadow-custom-green  overflow-hidden  hover:cursor-pointer">
             {" "}
@@ -113,7 +113,7 @@ function Projects() {
                 visit
               </a>
             </div>
-            <img src="../food-del-dash.PNG" className="scale-down-up" />
+            <img src="../food-del-dash.PNG" className="z-0 scale-down-up" />
           </div>
           <div className="relative parent rounded-lg border-yellow-950 shadow-custom-green  overflow-hidden  hover:cursor-pointer">
             {" "}
@@ -129,7 +129,7 @@ function Projects() {
                 visit
               </a>
             </div>
-            <img src="../react-pizza.PNG" className="scale-down-up" />
+            <img src="../react-pizza.PNG" className="z-0 scale-down-up" />
           </div>
           <div className="relative parent rounded-lg border-yellow-950 shadow-custom-green  overflow-hidden  hover:cursor-pointer">
             {" "}
@@ -145,7 +145,7 @@ function Projects() {
                 visit
               </a>
             </div>
-            <img src="../weather.PNG" className="scale-down-up" />
+            <img src="../weather.PNG" className="z-0 scale-down-up" />
           </div>
           <div className="relative parent rounded-lg border-yellow-950 shadow-custom-green  overflow-hidden  hover:cursor-pointer">
             {" "}
@@ -161,11 +161,11 @@ function Projects() {
                 visit
               </a>
             </div>
-            <img src="../natours.PNG" className="scale-down-up" />
+            <img src="../natours.PNG" className="z-0 scale-down-up" />
           </div>
         </div>
-        <div className="mt-20"> </div>
       </div>
+      <h1 className="opacity-0">kaleab</h1>
     </div>
   );
 }

@@ -3,7 +3,6 @@ import { IoHome } from "react-icons/io5";
 import { FaUser } from "react-icons/fa";
 import { IoBagCheckSharp } from "react-icons/io5";
 import { FaMessage } from "react-icons/fa6";
-import { MdOutlineLightMode } from "react-icons/md";
 import "./Navbar.css";
 
 function Navbar() {
@@ -14,7 +13,7 @@ function Navbar() {
 
   return (
     <>
-      <ul className="fixed top-1/2 right-2 -translate-x-1/2 -translate-y-1/2 flex flex-col gap-6 phone:invisible phone:z-0 laptop:visible ">
+      <ul className="fixed top-1/2 right-2 -translate-x-1/2 -translate-y-1/2 flex flex-col gap-6 phone:invisible phone:z-0 laptop:visible laptop:z-50">
         <li className="link flex items-center gap-4">
           <NavLink to="/" className={` ${linkClassNames} relative z-50 icon`}>
             <div className="text-md flex items-center gap-4 absolute right-0 top-0 rounded-full invisible z-0 span">

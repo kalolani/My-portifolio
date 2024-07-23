@@ -7,11 +7,10 @@ import { GoDatabase } from "react-icons/go";
 import { GoCpu } from "react-icons/go";
 import { IoGitBranchOutline } from "react-icons/io5";
 import { Link, Outlet } from "react-router-dom";
-
-import "./About.css";
 import { useState } from "react";
+import "./About.css";
 function About() {
-  const [activeTechnic, isActiveTechnic] = useState(false);
+  const [activeTechnic, isActiveTechnic] = useState(true);
   const [activeLanguage, isActiveLanguage] = useState(false);
   const [activeThirdparty, isActiveThirdparty] = useState(false);
   const [activeTools, isActiveTools] = useState(false);
@@ -22,19 +21,23 @@ function About() {
   let toolsActive;
   let projectActive;
   if (activeTechnic) {
-    activeClass = "bg-green-500";
+    activeClass = "bg-yellow-500";
+  } else {
+    activeClass = "";
   }
   if (activeThirdparty) {
-    thirdpartyActive = "bg-green-500";
+    thirdpartyActive = "bg-yellow-500";
+  } else {
+    thirdpartyActive = "";
   }
   if (activeLanguage) {
-    languageActive = "bg-green-500";
+    languageActive = "bg-yellow-500";
   }
   if (activeTools) {
-    toolsActive = "bg-green-500";
+    toolsActive = "bg-yellow-500";
   }
   if (activeProject) {
-    projectActive = "bg-green-500";
+    projectActive = "bg-yellow-500";
   }
 
   function handleTechnic() {
@@ -73,15 +76,17 @@ function About() {
     isActiveTools(false);
     isActiveProject(!activeProject);
   }
-  console.log(activeTechnic);
-  console.log(activeClass);
+  // console.log(activeTechnic);
+  // console.log(activeClass);
+  console.log(activeThirdparty);
+  console.log(thirdpartyActive);
   return (
-    <div className="text-slate-50 w-full phone:w-full">
+    <div className="mb-20 text-slate-50 w-full phone:w-full phone:mb-20">
       <div className="fixed top-12 right-6 z-50 bg-stone-800 p-4 rounded-full hover:cursor-pointer hover:bg-yellow-500 phone:invisible laptop:visible">
         <FaRegSun size={18} color="white" />
       </div>
       <Navbar />
-      <div className="relative text-container">
+      <div className="relative text-containers">
         <h1 className="font-poppins text-3xl text-center my-20 uppercase text-6xl font-extrabold text-gray-50 phone:text-4xl ptab:text-5xl laptop:text-6xl laptop:my-16">
           about <span className="text-yellow-500 font-poppins">me</span>
         </h1>
@@ -150,8 +155,8 @@ function About() {
             </button>
           </div>
         </div>
-        <div className="font-poppins grid grid-cols-2 gap-6 px-6 phone:grid-cols-1 ptab:grid-cols-2">
-          <div className="border-2 border-stone-800 rounded-lg px-8 py-6">
+        <div className="h-1/2 font-poppins grid grid-cols-2 gap-6 px-6 phone:grid-cols-1 ptab:grid-cols-2">
+          <div className="border-2 border-stone-800 rounded-lg px-8 py-4">
             <h1 className="font-poppins text-4xl font-extrabold text-yellow-500">
               2 <sup>+</sup>
             </h1>
@@ -163,7 +168,7 @@ function About() {
               </p>
             </div>
           </div>
-          <div className="border-2 border-stone-800 rounded-lg px-6 py-6">
+          <div className="border-2 border-stone-800 rounded-lg px-6 py-4">
             <h1 className="font-poppins text-4xl font-extrabold text-yellow-500">
               2 <sup>+</sup>
             </h1>
@@ -175,7 +180,7 @@ function About() {
               </p>
             </div>
           </div>
-          <div className="border-2 border-stone-800 rounded-lg px-6 py-6">
+          <div className="border-2 border-stone-800 rounded-lg px-6 py-4">
             <h1 className="font-poppins text-4xl font-extrabold text-yellow-500">
               10 <sup>+</sup>
             </h1>
@@ -187,7 +192,7 @@ function About() {
               </p>
             </div>
           </div>
-          <div className="border-2 border-stone-800 rounded-lg px-6 py-6">
+          <div className="border-2 border-stone-800 rounded-lg px-6 py-4">
             <h1 className="font-poppins text-4xl font-extrabold text-yellow-500">
               2 <sup>+</sup>
             </h1>
@@ -201,14 +206,14 @@ function About() {
           </div>
         </div>
       </div>
-      <div className="font-poppins max-w-6xl m-auto my-20 py-16 bg-stone-900 rounded-2xl px-6 phone:px-4 ">
+      <div className="font-poppins max-w-6xl m-auto mt-20 mb-20 py-16 bg-stone-900 rounded-2xl px-6 phone:px-4">
         <div className="grid grid-cols-2 gap-6 phone:grid-cols-1 btablet:grid-cols-2">
           <div>
             <ul className="flex flex-col gap-4">
               <Link
                 to="technique"
                 onClick={() => handleTechnic()}
-                className={`${activeClass} link hover:bg-green-600 flex items-center justify-between py-4 px-6 bg-stone-800 rounded-lg hover:cursor-pointer`}
+                className={`${activeClass} link flex items-center justify-between py-4 px-6  rounded-lg hover:cursor-pointer`}
               >
                 <p className="text font-poppins uppercase font-bold">
                   technical
@@ -218,7 +223,7 @@ function About() {
               <Link
                 to="language"
                 onClick={() => handleLanguage()}
-                className={`${languageActive} link hover:bg-green-600 flex items-center justify-between py-4 px-6 bg-stone-800 rounded-lg hover:cursor-pointer`}
+                className={`${languageActive} link flex items-center justify-between py-4 px-6 bg-stone-800 rounded-lg hover:cursor-pointer`}
               >
                 {" "}
                 <p className="text font-poppins uppercase font-bold">
@@ -229,7 +234,7 @@ function About() {
               <Link
                 to="thirdparty"
                 onClick={() => handleThirdparty()}
-                className={`${thirdpartyActive} link hover:bg-green-600 flex items-center justify-between py-4 px-6 bg-stone-800 rounded-lg hover:cursor-pointer`}
+                className={`${thirdpartyActive} link flex items-center justify-between py-4 px-6 bg-stone-800 rounded-lg hover:cursor-pointer`}
               >
                 {" "}
                 <p className="text font-poppins uppercase font-bold">
@@ -240,7 +245,7 @@ function About() {
               <Link
                 to="tools"
                 onClick={() => handleTools()}
-                className={`${toolsActive} link hover:bg-green-600 flex items-center justify-between py-4 px-6 bg-stone-800 rounded-lg hover:cursor-pointer`}
+                className={`${toolsActive} link flex items-center justify-between py-4 px-6 bg-stone-800 rounded-lg hover:cursor-pointer`}
               >
                 {" "}
                 <p className="text font-poppins uppercase font-bold">tools</p>
@@ -249,7 +254,7 @@ function About() {
               <Link
                 to="project"
                 onClick={() => handleProject()}
-                className={`${projectActive} link hover:bg-green-600 flex items-center justify-between py-4 px-6 bg-stone-800 rounded-lg hover:cursor-pointer`}
+                className={`${projectActive} link flex items-center justify-between py-4 px-6 bg-stone-800 rounded-lg hover:cursor-pointer`}
               >
                 {" "}
                 <p className="text font-poppins uppercase font-bold">
@@ -259,14 +264,15 @@ function About() {
               </Link>
             </ul>
           </div>
-          <div className="bg-stone-600 pt-4 px-4 rounded-lg py-4 ">
-            <h1 className="font-poppins uppercase font-extrabold tracking-wide text-center text-5xl mb-6">
+          <div className="pt-4 px-4 rounded-lg py-4 border-2 border-yellow-200">
+            <h1 className="font-poppins uppercase font-extrabold tracking-wide text-center text-5xl mb-16 text-yellow-300">
               skills
             </h1>
             <Outlet />
           </div>
         </div>
       </div>
+      <h1 className="mt-20 opacity-0">k</h1>
     </div>
   );
 }

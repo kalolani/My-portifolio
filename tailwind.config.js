@@ -32,12 +32,13 @@ export default {
       },
       gridTemplateColumns: {
         "1fr-2fr": "1.5fr 2fr",
+        "1fr-3fr": "1fr 2fr",
       },
       boxShadow: {
         "custom-red":
           "0 4px 6px -1px rgba(255, 0, 0, 0.5), 0 2px 4px -1px rgba(255, 0, 0, 0.06)",
         "custom-green":
-          "0 4px 6px -1px rgba(0, 255, 0, 0.5), 0 2px 4px -1px rgba(0, 255, 0, 0.06)",
+          "0 4px 6px -1px rgba(234,179,8,0.8), 0 2px 4px -1px  rgba(234,179,8,0.6)",
         "custom-blue":
           "0 4px 6px -1px rgba(0, 0, 255, 0.5), 0 2px 4px -1px rgba(0, 0, 255, 0.06)",
       },
