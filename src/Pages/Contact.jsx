@@ -17,9 +17,32 @@ function Contact() {
   const [message, setMessage] = useState("");
   const [subject, setSubject] = useState("");
   const [email, setEmail] = useState([]);
+  const [successMessage, setSuccessMessage] = useState("");
+  console.log(successMessage);
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
+  const onSubmit = async (event) => {
+    event.preventDefault();
+    const formData = new FormData(event.target);
+
+    formData.append("access_key", "6d92ac7e-6da5-4f25-9e7c-7f7301978c60");
+
+    const object = Object.fromEntries(formData);
+    const json = JSON.stringify(object);
+
+    const res = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+      body: json,
+    }).then((res) => res.json());
+
+    if (res.success) {
+      setSuccessMessage("Message sent successfully!!!");
+    } else {
+      setSuccessMessage("⛔Error occured while sending message");
+    }
   };
   return (
     <div className=" w-full h-full text-slate-50">
@@ -64,22 +87,38 @@ function Contact() {
             </div>
           </div>
           <div className="flex gap-4 mt-2 ">
-            <div className="bg-stone-800 p-2 rounded-lg hover:cursor-pointer hover:bg-yellow-500">
+            <a
+              href="https://www.linkedin.com/in/kaleab-gemechu-456ab9259/"
+              target="_blank"
+              className="bg-stone-800 p-2 rounded-lg hover:cursor-pointer hover:bg-yellow-500"
+            >
               <FaLinkedinIn size={30} />
-            </div>
-            <div className="bg-stone-800 p-2 rounded-lg hover:cursor-pointer hover:bg-yellow-500">
+            </a>
+            <a
+              href="https://www.instagram.com/kal_olani/"
+              target="_blank"
+              className="bg-stone-800 p-2 rounded-lg hover:cursor-pointer hover:bg-yellow-500"
+            >
               <FaInstagram size={30} />
-            </div>
-            <div className="bg-stone-800 p-2 rounded-lg hover:cursor-pointer hover:bg-yellow-500">
+            </a>
+            <a
+              href="https://t.me/kal_olani7"
+              target="_blank"
+              className="bg-stone-800 p-2 rounded-lg hover:cursor-pointer hover:bg-yellow-500"
+            >
               <FaTelegramPlane size={30} />
-            </div>
-            <div className="bg-stone-800 p-2 rounded-lg hover:cursor-pointer hover:bg-yellow-500">
+            </a>
+            <a
+              href="https://x.com/kaleab481039"
+              target="_blank"
+              className="bg-stone-800 p-2 rounded-lg hover:cursor-pointer hover:bg-yellow-500"
+            >
               <FaXTwitter size={30} />
-            </div>
+            </a>
           </div>
         </div>
         <div className="self-center justify-self-center phone:w-3/4 laptop:w-10/12">
-          <form onSubmit={handleSubmit}>
+          <form onSubmit={onSubmit}>
             <div className="flex flex-col gap-4">
               <div className="flex gap-4 phone:flex-col laptop:flex-row">
                 <div>
@@ -90,7 +129,7 @@ function Contact() {
                     value={name}
                     onChange={(e) => setName(e.target.value)}
                     placeholder="Your Name"
-                    className="p-4 rounded-lg bg-stone-800 focus:border-yellow-300 outline-none focus:outline-yellow-300 phone:w-full"
+                    className="border-none p-4 rounded-lg bg-stone-800 focus:border-yellow-300 outline-none focus:outline-yellow-300 phone:w-full"
                     required
                   />
                 </div>
@@ -128,7 +167,7 @@ function Contact() {
                 ></textarea>
               </div>
 
-              <div className="">
+              <div className="flex items-center gap-4">
                 <button
                   type="submit"
                   className="custom-button flex items-center gap-2 font-poppins uppercase border-2 border-yellow-300 py-2 px-4 rounded-lg"
@@ -138,6 +177,13 @@ function Contact() {
                     <IoIosArrowRoundForward size={25} />
                   </span>
                 </button>
+                <p
+                  className={`${
+                    successMessage ? "text-green-600" : "text-red-600"
+                  }`}
+                >
+                  {successMessage}
+                </p>
               </div>
             </div>
           </form>
