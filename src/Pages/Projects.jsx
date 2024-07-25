@@ -2,6 +2,8 @@ import Navbar from "../Components/Navbar";
 import { FaRegSun } from "react-icons/fa";
 import "./projects.css";
 
+import Transition from "../Transition";
+
 function Projects() {
   return (
     <div className="h-full w-full text-slate-50">
@@ -170,4 +172,4 @@ function Projects() {
   );
 }
 
-export default Projects;
+export default Transition(Projects);

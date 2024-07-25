@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import Navbar from "../Components/Navbar";
 import { FaRegSun } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
@@ -7,9 +8,10 @@ import { FaInstagram } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaSquarePhone } from "react-icons/fa6";
 import { IoIosArrowRoundForward } from "react-icons/io";
-
 import "./contact.css";
 import { useState } from "react";
+
+import Transition from "../Transition";
 
 function Contact() {
   const [name, setName] = useState("");
@@ -194,4 +196,4 @@ function Contact() {
   );
 }
 
-export default Contact;
+export default Transition(Contact);

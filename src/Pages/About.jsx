@@ -9,6 +9,9 @@ import { IoGitBranchOutline } from "react-icons/io5";
 import { Link, Outlet } from "react-router-dom";
 import { useState } from "react";
 import "./About.css";
+
+import Transition from "../Transition";
+
 function About() {
   const [activeTechnic, isActiveTechnic] = useState(true);
   const [activeLanguage, isActiveLanguage] = useState(false);
@@ -277,4 +280,4 @@ function About() {
   );
 }
 
-export default About;
+export default Transition(About);

@@ -1,9 +1,11 @@
+/* eslint-disable react/no-unescaped-entities */
 import Navbar from "../Components/Navbar";
 import Polygon from "../Components/Polygon";
 import { HiMiniArrowSmallRight } from "react-icons/hi2";
 import { FaRegSun } from "react-icons/fa";
-
 import "./Home.css";
+
+import Transition from "../Transition";
 
 function Home() {
   return (
@@ -45,4 +47,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default Transition(Home);
