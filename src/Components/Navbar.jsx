@@ -20,7 +20,7 @@ function Navbar() {
                 } hover:bg-amber-500 active:bg-amber-500 group-hover:gap-4 py-3 group-hover:py-3 px-4 absolute right-0 top-0 rounded-full z-0 uppercase transition-all duration-[400ms] origin-left will-change-transform`}
               >
                 <div className="w-0 group-hover:w-full transition-all duration-[500ms]">
-                  <p className="font-poppins text-white w-0 opacity-0 group-hover:opacity-100 group-hover:w-full transition-all duration-[500ms] origin-right will-change-transform">
+                  <p className="font-poppins text-white w-0 opacity-0 group-hover:opacity-100 group-hover:w-full transition-all duration-[50ms] origin-right will-change-transform">
                     home
                   </p>
                 </div>
@@ -40,7 +40,7 @@ function Navbar() {
                 } hover:bg-amber-500 active:bg-amber-500 group-hover:gap-4 py-3 group-hover:py-3 px-4 absolute right-0 top-0 rounded-full z-0 uppercase transition-all duration-[400ms] origin-left will-change-transform`}
               >
                 <div className="w-0 h-full group-hover:w-full group-hover:h-full transition-all duration-[500ms] origin-right">
-                  <p className="font-poppins text-white w-0 h-full opacity-0 group-hover:opacity-100 group-hover:w-full group-hover:h-full transition-all duration-[500ms] origin-left will-change-transform">
+                  <p className="font-poppins text-white w-0 h-full opacity-0 group-hover:opacity-100 group-hover:w-full group-hover:h-full transition-all duration-[50ms] origin-left will-change-transform">
                     home
                   </p>
                 </div>
@@ -60,7 +60,7 @@ function Navbar() {
                 } hover:bg-amber-500 active:bg-amber-500 group-hover:gap-4 py-3 group-hover:py-3 px-4 absolute right-0 top-0 rounded-full z-0 uppercase transition-all duration-[400ms] origin-left will-change-transform`}
               >
                 <div className="w-0 h-full group-hover:w-full group-hover:h-full transition-all duration-[500ms] origin-right">
-                  <p className="font-poppins text-white w-0 h-full opacity-0 group-hover:opacity-100 group-hover:w-full group-hover:h-full transition-all duration-[500ms] origin-left will-change-transform">
+                  <p className="font-poppins text-white w-0 h-full opacity-0 group-hover:opacity-100 group-hover:w-full group-hover:h-full transition-all duration-[50ms] origin-left will-change-transform">
                     home
                   </p>
                 </div>
@@ -80,7 +80,7 @@ function Navbar() {
                 } hover:bg-amber-500 active:bg-amber-500 group-hover:gap-4 py-3 group-hover:py-3 px-4 absolute right-0 top-0 rounded-full z-0 uppercase transition-all duration-[400ms] origin-left will-change-transform`}
               >
                 <div className="w-0 h-full group-hover:w-full group-hover:h-full transition-all duration-[500ms] origin-right">
-                  <p className="font-poppins text-white w-0 h-full opacity-0 group-hover:opacity-100 group-hover:w-full group-hover:h-full transition-all duration-[500ms] origin-left will-change-transform">
+                  <p className="font-poppins text-white w-0 h-full opacity-0 group-hover:opacity-100 group-hover:w-full group-hover:h-full transition-all duration-[50ms] origin-left will-change-transform">
                     home
                   </p>
                 </div>
