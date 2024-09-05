@@ -48,7 +48,7 @@ function Contact() {
   };
   return (
     <div className=" w-full h-full text-slate-50">
-      <div className="fixed top-12 right-6 z-50 bg-stone-800 p-4 rounded-full hover:cursor-pointer hover:bg-yellow-500 phone:invisible laptop:visible">
+      <div className="fixed top-12 right-6 z-50 bg-stone-800 p-4 rounded-full hover:cursor-pointer hover:bg-amber-500 phone:invisible laptop:visible">
         <FaRegSun size={18} color="white" />
       </div>
       <Navbar />

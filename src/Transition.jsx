@@ -10,22 +10,43 @@ function Transition(OgComponent) {
           initial={{ scaleY: 0 }}
           animate={{ scaleY: 0 }}
           exit={{ scaleY: 1 }}
-          transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
+          transition={{ duration: 0.5, ease: [0.215, 0.61, 0.355, 1] }}
         />
 
         <motion.div
           className="slide-out z-50"
-          initial={{ scaleY: 1 }}
-          animate={{ scaleY: 0 }}
-          exit={{ scaleY: 0 }}
-          transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
-        />
-        <motion.div
-          className="fade-in-out z-50"
           initial={{ scaleY: 0 }}
           animate={{ scaleY: 0 }}
           exit={{ scaleY: 1 }}
-          transition={{ duration: 0.7 }}
+          // Adding delay to the transition
+          transition={{
+            duration: 0.5,
+            delay: 0.2,
+            ease: [0.215, 0.61, 0.355, 1],
+          }}
+        />
+        <motion.div
+          className="slide-in z-50"
+          initial={{ scaleY: 0 }}
+          animate={{ scaleY: 0 }}
+          exit={{ scaleY: 1 }}
+          transition={{
+            duration: 0.5,
+            delay: 0.4,
+            ease: [0.215, 0.61, 0.355, 1],
+          }}
+        />
+        <motion.div
+          className="slide-out z-50"
+          initial={{ scaleY: 0 }}
+          animate={{ scaleY: 0 }}
+          exit={{ scaleY: 1 }}
+          // Adding delay to the transition
+          transition={{
+            duration: 0.3,
+            delay: 0.6,
+            ease: [0.215, 0.61, 0.355, 1],
+          }}
         />
       </>
     );

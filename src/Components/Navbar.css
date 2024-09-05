@@ -1,13 +1,13 @@
-a {
+/* a {
   background-color: rgb(41 37 36);
   display: inline-block;
   padding: 1rem;
   border-radius: 9999px;
   transition: all 0.5s;
-}
-a:hover {
-  background-color: rgb(234 179 8);
-}
+} */
+/* a:hover {
+  background-color: rgb(245 158 11);
+} */
 
 .position {
   position: absolute;
@@ -16,14 +16,11 @@ a:hover {
   transform: translate(-50%, -50%);
 }
 
-.active {
-  background-color: rgb(234 179 8);
-}
-.span {
+/* .span {
   transform: translateX(5px);
-  transition: all 0.015s;
-}
-.link:hover {
+  transition: all 0.5s;
+} */
+/* .link:hover {
   visibility: invisible;
 }
 .link:hover .span {
@@ -32,7 +29,7 @@ a:hover {
   padding: 0.81rem 1.5rem;
   padding-right: 1rem;
   z-index: 50;
-  background-color: rgb(234 179 8);
+  background-color: rgb(245 158 11);
   text-transform: uppercase;
   transform: translateX(0px);
-}
+} */

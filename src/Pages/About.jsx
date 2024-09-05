@@ -24,23 +24,23 @@ function About() {
   let toolsActive;
   let projectActive;
   if (activeTechnic) {
-    activeClass = "bg-yellow-500";
+    activeClass = "bg-amber-500";
   } else {
     activeClass = "";
   }
   if (activeThirdparty) {
-    thirdpartyActive = "bg-yellow-500";
+    thirdpartyActive = "bg-amber-500";
   } else {
     thirdpartyActive = "";
   }
   if (activeLanguage) {
-    languageActive = "bg-yellow-500";
+    languageActive = "bg-amber-500";
   }
   if (activeTools) {
-    toolsActive = "bg-yellow-500";
+    toolsActive = "bg-amber-500";
   }
   if (activeProject) {
-    projectActive = "bg-yellow-500";
+    projectActive = "bg-amber-500";
   }
 
   function handleTechnic() {
@@ -85,16 +85,16 @@ function About() {
   console.log(thirdpartyActive);
   return (
     <div className="mb-20 text-slate-50 w-full phone:w-full phone:mb-20">
-      <div className="fixed top-12 right-6 z-50 bg-stone-800 p-4 rounded-full hover:cursor-pointer hover:bg-yellow-500 phone:invisible laptop:visible">
+      <div className="fixed top-12 right-6 z-50 bg-stone-800 p-4 rounded-full hover:cursor-pointer hover:bg-amber-500 phone:invisible laptop:visible">
         <FaRegSun size={18} color="white" />
       </div>
       <Navbar />
       <div className="relative text-containers">
         <h1 className="font-poppins text-3xl text-center my-20 uppercase text-6xl font-extrabold text-gray-50 phone:text-4xl ptab:text-5xl laptop:text-6xl laptop:my-16">
-          about <span className="text-yellow-500 font-poppins">me</span>
+          about <span className="text-amber-500 font-poppins">me</span>
         </h1>
       </div>
-      <div className="font-poppins grid grid grid-cols-2 max-w-6xl m-auto gap-6 phone:grid-cols-1 phone:m-auto laptop:grid-cols-2">
+      <div className="font-poppins grid grid grid-cols-2 max-w-5xl m-auto gap-6 phone:grid-cols-1 phone:m-auto laptop:grid-cols-2">
         <div className="">
           <h3 className="uppercase font-poppins mb-8 text-2xl font-bold phone:text-xl phone:text-start phone:px-6 mdphone:text-center laptop:text-2xl laptop:text-start laptop:px-0">
             personal information
@@ -152,7 +152,7 @@ function About() {
             </div>
           </div>
           <div className="flex justify-start items-center mt-4 mb-4 phone:justify-start phone:px-6 mdphone:justify-center mtab:justify-start tablet:justify-center tablet:mt-10 laptop:justify-start">
-            <button className="custom-button btn-arrow text-white border-2 px-4 py-2 rounded-lg border-yellow-400 flex items-center">
+            <button className="custom-button btn-arrow text-white border-2 px-4 py-2 rounded-lg border-amber-400 flex items-center">
               <span className="font-poppins uppercase">download cv</span>
               <HiMiniArrowSmallRight size={30} className="btn-arrow" />
             </button>
@@ -160,7 +160,7 @@ function About() {
         </div>
         <div className="h-1/2 font-poppins grid grid-cols-2 gap-6 px-6 phone:grid-cols-1 ptab:grid-cols-2">
           <div className="border-2 border-stone-800 rounded-lg px-8 py-4">
-            <h1 className="font-poppins text-4xl font-extrabold text-yellow-500">
+            <h1 className="font-poppins text-4xl font-extrabold text-amber-500">
               2 <sup>+</sup>
             </h1>
             <div className="flex items-start gap-4">
@@ -172,7 +172,7 @@ function About() {
             </div>
           </div>
           <div className="border-2 border-stone-800 rounded-lg px-6 py-4">
-            <h1 className="font-poppins text-4xl font-extrabold text-yellow-500">
+            <h1 className="font-poppins text-4xl font-extrabold text-amber-500">
               2 <sup>+</sup>
             </h1>
             <div className="flex items-start gap-4">
@@ -184,7 +184,7 @@ function About() {
             </div>
           </div>
           <div className="border-2 border-stone-800 rounded-lg px-6 py-4">
-            <h1 className="font-poppins text-4xl font-extrabold text-yellow-500">
+            <h1 className="font-poppins text-4xl font-extrabold text-amber-500">
               10 <sup>+</sup>
             </h1>
             <div className="flex items-start gap-4">
@@ -196,7 +196,7 @@ function About() {
             </div>
           </div>
           <div className="border-2 border-stone-800 rounded-lg px-6 py-4">
-            <h1 className="font-poppins text-4xl font-extrabold text-yellow-500">
+            <h1 className="font-poppins text-4xl font-extrabold text-amber-500">
               2 <sup>+</sup>
             </h1>
             <div className="flex items-start gap-4">
@@ -209,7 +209,7 @@ function About() {
           </div>
         </div>
       </div>
-      <div className="font-poppins max-w-6xl m-auto mt-20 mb-20 py-16 bg-stone-900 rounded-2xl px-6 phone:px-4">
+      <div className="font-poppins max-w-5xl m-auto mt-20 mb-20 py-16 bg-stone-900 rounded-2xl px-6 phone:px-4">
         <div className="grid grid-cols-2 gap-6 phone:grid-cols-1 btablet:grid-cols-2">
           <div>
             <ul className="flex flex-col gap-4">
@@ -267,8 +267,8 @@ function About() {
               </Link>
             </ul>
           </div>
-          <div className="pt-4 px-4 rounded-lg py-4 border-2 border-yellow-200">
-            <h1 className="font-poppins uppercase font-extrabold tracking-wide text-center text-5xl mb-16 text-yellow-300">
+          <div className="pt-4 px-4 rounded-lg py-4 border-2 border-amber-200">
+            <h1 className="font-poppins uppercase font-extrabold tracking-wide text-center text-5xl mb-16 text-amber-300">
               skills
             </h1>
             <Outlet />

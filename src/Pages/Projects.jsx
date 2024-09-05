@@ -7,7 +7,7 @@ import Transition from "../Transition";
 function Projects() {
   return (
     <div className="h-full w-full text-slate-50">
-      <div className="fixed top-12 right-6 z-50 bg-stone-800 p-4 rounded-full hover:cursor-pointer hover:bg-yellow-500 phone:invisible laptop:visible">
+      <div className="fixed top-12 right-6 z-50 bg-stone-800 p-4 rounded-full hover:cursor-pointer hover:bg-amber-500 phone:invisible laptop:visible">
         <FaRegSun size={18} color="white" />
       </div>
       <Navbar />,
@@ -17,8 +17,8 @@ function Projects() {
         </h1>
       </div>
       <div className="mb-8">
-        <div className="max-w-6xl m-auto grid grid-cols-3 gap-x-8 gap-y-16 items-center justify-items-center phone:grid-cols-1 phone:px-4 tablet:grid-cols-2 laptop:grid-cols-3 laptop:px-0">
-          <div className="z-0 relative parent rounded-lg border-yellow-950  shadow-custom-green overflow-hidden  hover:cursor-pointer">
+        <div className="max-w-5xl m-auto grid grid-cols-3 gap-x-8 gap-y-16 items-center justify-items-center phone:grid-cols-1 phone:px-4 tablet:grid-cols-2 laptop:grid-cols-3 laptop:px-0 overflow-hidden">
+          <div className="z-0 relative parent rounded-md border-2 border-amber-500 overflow-hidden hover:cursor-pointer">
             <div className="img-container grid items-center justify-items-center">
               <p className="font-poppins uppercase w-3/4 self-center text-center">
                 landing page for tour organizer company
@@ -31,9 +31,12 @@ function Projects() {
                 visit
               </a>
             </div>
-            <img src="../natours.PNG" className="z-0 scale-down-up img" />
+            <img
+              src="../natours.PNG"
+              className="z-0 scale-down-up img overflow-hidden"
+            />
           </div>
-          <div className="z-0 relative parent rounded-lg border-yellow-950 shadow-custom-green overflow-hidden  hover:cursor-pointer ">
+          <div className="z-0 relative parent rounded-md border-2 border-amber-500 overflow-hidden  hover:cursor-pointer ">
             {" "}
             <div className="img-container grid items-center justify-items-center">
               <p className="font-poppins uppercase w-3/4 self-center text-center">
@@ -49,7 +52,7 @@ function Projects() {
             </div>
             <img src="../nexter.PNG" className="z-0 scale-down-up" />
           </div>
-          <div className="z-0 relative parent rounded-lg border-yellow-950 shadow-custom-green overflow-hidden  hover:cursor-pointer">
+          <div className="z-0 relative parent rounded-md border-2 border-amber-500 overflow-hidden  hover:cursor-pointer">
             {" "}
             <div className="img-container grid items-center justify-items-center">
               <p className="font-poppins uppercase w-3/4 self-center text-center">
@@ -65,7 +68,7 @@ function Projects() {
             </div>
             <img src="../omnifood.PNG" className="z-0 scale-down-up" />
           </div>
-          <div className="relative parent rounded-lg border-yellow-950 shadow-custom-green  overflow-hidden  hover:cursor-pointer">
+          <div className="relative parent rounded-md border-2 border-amber-500 overflow-hidden  hover:cursor-pointer">
             {" "}
             <div className="img-container grid items-center justify-items-center">
               <p className="font-poppins uppercase w-3/4 self-center text-center">
@@ -81,7 +84,7 @@ function Projects() {
             </div>
             <img src="../project-5.PNG" className="z-0 scale-down-up" />
           </div>
-          <div className="relative parent rounded-lg border-yellow-950 shadow-custom-green  overflow-hidden  hover:cursor-pointer">
+          <div className="relative parent rounded-md border-2 border-amber-500 overflow-hidden  hover:cursor-pointer">
             {" "}
             <div className="img-container grid items-center justify-items-center">
               <p className="font-poppins uppercase w-3/4 self-center text-center">
@@ -98,7 +101,7 @@ function Projects() {
             </div>
             <img src="../food-del.PNG" className="z-0 scale-down-up" />
           </div>
-          <div className="relative parent rounded-lg border-yellow-950 shadow-custom-green  overflow-hidden  hover:cursor-pointer">
+          <div className="relative parent rounded-md border-2 border-amber-500 overflow-hidden  hover:cursor-pointer">
             {" "}
             <div className="img-container grid items-center justify-items-center">
               <p className="font-poppins uppercase w-3/4 self-center text-center">
@@ -117,7 +120,7 @@ function Projects() {
             </div>
             <img src="../food-del-dash.PNG" className="z-0 scale-down-up" />
           </div>
-          <div className="relative parent rounded-lg border-yellow-950 shadow-custom-green  overflow-hidden  hover:cursor-pointer">
+          <div className="relative parent rounded-md border-2 border-amber-500 overflow-hidden  hover:cursor-pointer">
             {" "}
             <div className="img-container grid items-center justify-items-center">
               <p className="font-poppins uppercase w-3/4 self-center text-center">
@@ -133,7 +136,7 @@ function Projects() {
             </div>
             <img src="../react-pizza.PNG" className="z-0 scale-down-up" />
           </div>
-          <div className="relative parent rounded-lg border-yellow-950 shadow-custom-green  overflow-hidden  hover:cursor-pointer">
+          <div className="relative parent rounded-md border-2 border-amber-500 overflow-hidden  hover:cursor-pointer">
             {" "}
             <div className="img-container grid items-center justify-items-center">
               <p className="font-poppins uppercase w-3/4 self-center text-center">
@@ -149,7 +152,7 @@ function Projects() {
             </div>
             <img src="../weather.PNG" className="z-0 scale-down-up" />
           </div>
-          <div className="relative parent rounded-lg border-yellow-950 shadow-custom-green  overflow-hidden  hover:cursor-pointer">
+          <div className="relative parent rounded-md border-2 border-amber-500 overflow-hidden  hover:cursor-pointer">
             {" "}
             <div className="img-container grid items-center justify-items-center">
               <p className="font-poppins uppercase w-3/4 self-center text-center">

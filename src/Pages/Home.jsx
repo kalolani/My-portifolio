@@ -6,11 +6,12 @@ import { FaRegSun } from "react-icons/fa";
 import "./Home.css";
 
 import Transition from "../Transition";
+import { Link } from "react-router-dom";
 
 function Home() {
   return (
     <div className="relative w-full h-full z-30 phone:w-full">
-      <div className="absolute top-12 right-8 z-50 bg-stone-800 p-4 rounded-full hover:cursor-pointer hover:bg-yellow-500 phone:invisible laptop:visible">
+      <div className="absolute top-12 right-6 z-50 bg-stone-800 p-4 rounded-full hover:cursor-pointer hover:bg-amber-500 phone:invisible laptop:visible">
         <FaRegSun size={18} color="white" />
       </div>
       <Polygon />
@@ -19,12 +20,12 @@ function Home() {
         <div className="self-center justify-self-start ml-10 z-30 phone:justify-self-center phone:ml-0 laptop:justify-self-start laptop:ml-10 z-30 ">
           <img
             src="kale-ab.png"
-            className="inline-block h-90 rounded-3xl shadow-lg shadow-black z-30 phone:mt-2 phone:h-52 w-52 rounded-full border-4 border-stone-800 laptop:h-90 laptop:w-full laptop:rounded-3xl border-none"
+            className="inline-block h-90 rounded-3xl shadow-lg shadow-black z-30 phone:mt-2 phone:h-52 w-52 rounded-full border-4 border-stone-800 laptop:h-[34rem] laptop:w-[97%] laptop:rounded-3xl border-none"
           />
         </div>
         <div className="self-center justify-self-start ml-10 phone:justify-self-end  laptop:justify-center">
           <h1 className="font-poppins text-white text-5xl tracking-wider uppercase font-bold phone:text-2xl ptab:text-3xl laptop:text-5xl">
-            <span className="inline-block font-poppins text-yellow-500 tracking-wider uppercase font-bold mb-4">
+            <span className="inline-block font-poppins text-amber-500 tracking-wider uppercase font-bold mb-4">
               i'm kaleab gemechu.
             </span>
             <br />
@@ -36,10 +37,13 @@ function Home() {
             excellent software that improves the lives of those around me.
           </p>
           <div className="flex justify-start items-center mt-4 mb-4 laptop:mt-10">
-            <button className="custom-button btn-arrow text-white border-2 px-4 py-2 rounded-lg border-yellow-400 flex items-center">
+            <Link
+              to="/about"
+              className="custom-button btn-arrow text-white border-2 px-4 py-2 rounded-lg border-amber-400 flex items-center"
+            >
               <span className="font-poppins">more about me</span>
               <HiMiniArrowSmallRight size={30} className="btn-arrow" />
-            </button>
+            </Link>
           </div>
         </div>
       </div>
