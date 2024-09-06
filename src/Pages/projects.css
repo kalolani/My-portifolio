@@ -18,31 +18,33 @@
   opacity: 0.5; /* Adjust opacity for better visibility */
   pointer-events: none; /* Prevent interaction with the background text */
 }
-.img-container {
-  position: absolute;
-  top: 0;
-  width: 0%;
-  height: 0%;
-  opacity: 0;
-  /* background-image: radial-gradient(red, yellow); */
-  background-color: rgb(180 83 9);
-  z-index: 10;
-  transition: height 0.5s;
-}
-.parent:hover .img-container {
+
+/* .img-container { */
+/* position: absolute; */
+/* top: 0; */
+/* width: 0%; */
+/* height: 0%; */
+/* opacity: 0; */
+/* background-image: radial-gradient(red, yellow); */
+/* background-color: rgb(180 83 9); */
+/* z-index: 10; */
+/* transition: height 0.5s; */
+/* } */
+
+/* .parent:hover .img-container {
   height: 100%;
   width: 100%;
   opacity: 1;
-}
+} */
 
-.scale-down-up {
+/* .scale-down-up {
   transform: scale(1);
   transition: transform 0.3s ease;
-}
+} */
 
-.scale-down-up:hover {
+/* .scale-down-up:hover {
   transform: scale(1.08);
-}
+}  */
 
 @media (min-width: 320px) {
   .text-container::before {
