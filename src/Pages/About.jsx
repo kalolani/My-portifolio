@@ -7,82 +7,19 @@ import { GoDatabase } from "react-icons/go";
 import { GoCpu } from "react-icons/go";
 import { IoGitBranchOutline } from "react-icons/io5";
 import { Link, Outlet } from "react-router-dom";
-import { useState } from "react";
 import "./About.css";
+import { useStores } from "../contexts/storeContext";
 
 import Transition from "../Transition";
 
 function About() {
-  const [activeTechnic, isActiveTechnic] = useState(true);
-  const [activeLanguage, isActiveLanguage] = useState(false);
-  const [activeThirdparty, isActiveThirdparty] = useState(false);
-  const [activeTools, isActiveTools] = useState(false);
-  const [activeProject, isActiveProject] = useState(false);
-  let activeClass;
-  let languageActive;
-  let thirdpartyActive;
-  let toolsActive;
-  let projectActive;
-  if (activeTechnic) {
-    activeClass = "bg-amber-500";
-  } else {
-    activeClass = "";
-  }
-  if (activeThirdparty) {
-    thirdpartyActive = "bg-amber-500";
-  } else {
-    thirdpartyActive = "";
-  }
-  if (activeLanguage) {
-    languageActive = "bg-amber-500";
-  }
-  if (activeTools) {
-    toolsActive = "bg-amber-500";
-  }
-  if (activeProject) {
-    projectActive = "bg-amber-500";
-  }
+  const { activeSection, setActiveSection } = useStores();
 
-  function handleTechnic() {
-    isActiveTechnic(!activeTechnic);
-    isActiveLanguage(false);
-    isActiveThirdparty(false);
-    isActiveTools(false);
-    isActiveProject(false);
+  function handleSection(section) {
+    setActiveSection(activeSection === section ? "" : section);
   }
+  console.log(activeSection);
 
-  function handleLanguage() {
-    isActiveTechnic(false);
-    isActiveLanguage(!activeLanguage);
-    isActiveThirdparty(false);
-    isActiveTools(false);
-    isActiveProject(false);
-  }
-  function handleThirdparty() {
-    isActiveTechnic(false);
-    isActiveLanguage(false);
-    isActiveThirdparty(!activeThirdparty);
-    isActiveTools(false);
-    isActiveProject(false);
-  }
-  function handleTools() {
-    isActiveTechnic(false);
-    isActiveLanguage(false);
-    isActiveThirdparty(false);
-    isActiveTools(!activeTools);
-    isActiveProject(false);
-  }
-  function handleProject() {
-    isActiveTechnic(false);
-    isActiveLanguage(false);
-    isActiveThirdparty(false);
-    isActiveTools(false);
-    isActiveProject(!activeProject);
-  }
-  // console.log(activeTechnic);
-  // console.log(activeClass);
-  console.log(activeThirdparty);
-  console.log(thirdpartyActive);
   return (
     <div className="mb-20 text-slate-50 w-full phone:w-full phone:mb-20">
       <div className="fixed top-12 right-6 z-50 bg-stone-800 p-4 rounded-full hover:cursor-pointer hover:bg-amber-500 phone:invisible laptop:visible">
@@ -94,72 +31,101 @@ function About() {
           about <span className="text-amber-500 font-poppins">me</span>
         </h1>
       </div>
-      <div className="font-poppins grid grid grid-cols-2 max-w-5xl m-auto gap-6 phone:grid-cols-1 phone:m-auto laptop:grid-cols-2">
+      <div className="font-poppins grid grid grid-cols-2 max-w-[1150px] m-auto gap-4 phone:grid-cols-1 phone:m-auto laptop:grid-cols-2">
         <div className="">
-          <h3 className="uppercase font-poppins mb-8 text-2xl font-bold phone:text-xl phone:text-start phone:px-6 mdphone:text-center laptop:text-2xl laptop:text-start laptop:px-0">
+          <h3 className="uppercase font-poppins mb-8 text-xl font-bold phone:text-xl phone:text-start phone:px-6 mdphone:text-center laptop:text-2xl laptop:text-start laptop:px-0">
             personal information
           </h3>
           <div className="grid grid-cols-2 phone:px-8 phone:grid-cols-1 phone:gap-6 mtab:grid-cols-2 tablet:gap-20 laptop:gap-0 laptop:px-0">
             <div className="flex flex-col gap-6 mdphone:items-center mtab:items-start tablet:items-end laptop:items-start">
               <p className="font-poppins">
-                <span className="font-poppins text-gray-200"> First Name</span>{" "}
-                : <span className="bold font-poppins">Kaleab</span>
+                <span className="font-poppins text-md text-gray-400">
+                  {" "}
+                  First Name
+                </span>{" "}
+                : <span className="bold font-poppins text-md">Kaleab</span>
               </p>
               <p className="font-poppins">
-                <span className="font-poppins text-gray-200"> Last Name</span> :{" "}
-                <span className="bold font-poppins">Gemechu</span>
+                <span className="font-poppins text-gray-400 text-md">
+                  {" "}
+                  Last Name
+                </span>{" "}
+                : <span className="bold font-poppins text-md">Gemechu</span>
               </p>
               <p className="font-poppins">
-                <span className="font-poppns text-gray-200"> Age</span> :{" "}
-                <span className="bold font-poppins">24 Years</span>
+                <span className="font-poppns text-gray-400 text-md"> Age</span>{" "}
+                : <span className="bold font-poppins text-md">24 Years</span>
               </p>
               <p className="font-poppins">
-                <span className="font-poppins text-gray-200">Nationality</span>{" "}
-                : <span className="bold font-poppins">Ethiopian</span>
+                <span className="font-poppins text-gray-400 text-md">
+                  Nationality
+                </span>{" "}
+                : <span className="bold font-poppins text-md">Ethiopian</span>
               </p>
               <p className="font-poppins">
-                <span className="font-poppins text-gray-200">Freelance</span> :{" "}
-                <span className="bold font-poppins">Available</span>
+                <span className="font-poppins text-gray-400 text-md">
+                  Freelance
+                </span>{" "}
+                : <span className="bold font-poppins text-md">Available</span>
               </p>
             </div>
             <div className="flex flex-col gap-6 mdphone:items-center mtab:items-start">
               <p className="font-poppins phone:text-base">
-                <span className="font-poppins text-gray-200">Address</span> :{" "}
-                <span className="bold font-poppins">Dilla</span>
+                <span className="font-poppins text-gray-400 text-md">
+                  Address
+                </span>{" "}
+                : <span className="bold font-poppins text-md">Dilla</span>
               </p>
               <p className="font-poppins">
-                <span className="font-poppins text-gray-200">Phone</span> :{" "}
-                <span className="bold font-poppins">+251916163516</span>
+                <span className="font-poppins text-gray-400 text-md">
+                  Phone
+                </span>{" "}
+                :{" "}
+                <span className="bold font-poppins text-md">+251916163516</span>
               </p>
               <p className="font-poppins phone:text-base">
-                <span className="font-poppins text-gray-200"> Email</span> :{" "}
-                <span className="bold font-poppins ">
+                <span className="font-poppins text-gray-400 text-md">
+                  {" "}
+                  Email
+                </span>{" "}
+                :{" "}
+                <span className="bold font-poppins text-md">
                   kgemechu908@gmail.com
                 </span>
               </p>
               <p className="font-poppins">
-                <span className="font-poppins text-gray-200">Github</span> :{" "}
-                <span className="bold font-poppins">
+                <span className="font-poppins text-gray-400 text-md">
+                  Github
+                </span>{" "}
+                :{" "}
+                <span className="bold font-poppins text-md">
                   www.github.com/kalolani
                 </span>
               </p>
               <p className="font-poppins">
-                <span className="font-poppins text-gray-200">Language</span> :{" "}
-                <span className="bold font-poppins">
+                <span className="font-poppins text-gray-400 text-md">
+                  Language
+                </span>{" "}
+                :{" "}
+                <span className="bold font-poppins text-md ">
                   Amharic,English,Afaan Oromo
                 </span>
               </p>
             </div>
           </div>
-          <div className="flex justify-start items-center mt-4 mb-4 phone:justify-start phone:px-6 mdphone:justify-center mtab:justify-start tablet:justify-center tablet:mt-10 laptop:justify-start">
-            <button className="custom-button btn-arrow text-white border-2 px-4 py-2 rounded-lg border-amber-400 flex items-center">
+          <div className="flex justify-start items-center mb-4 phone:justify-start mdphone:justify-center mtab:justify-start tablet:justify-center tablet:mt-0 laptop:justify-start">
+            <a
+              href="/assets/CV.pdf"
+              download="kal intern resume.pdf"
+              className="custom-button btn-arrow text-white border-2 px-4 py-2 rounded-lg border-amber-400 flex items-center"
+            >
               <span className="font-poppins uppercase">download cv</span>
               <HiMiniArrowSmallRight size={30} className="btn-arrow" />
-            </button>
+            </a>
           </div>
         </div>
         <div className="h-1/2 font-poppins grid grid-cols-2 gap-6 px-6 phone:grid-cols-1 ptab:grid-cols-2">
-          <div className="border-2 border-stone-800 rounded-lg px-8 py-4">
+          <div className="border border-stone-800 rounded-lg px-10 py-8">
             <h1 className="font-poppins text-4xl font-extrabold text-amber-500">
               2 <sup>+</sup>
             </h1>
@@ -171,7 +137,7 @@ function About() {
               </p>
             </div>
           </div>
-          <div className="border-2 border-stone-800 rounded-lg px-6 py-4">
+          <div className="border border-stone-800 rounded-lg px-10 py-6">
             <h1 className="font-poppins text-4xl font-extrabold text-amber-500">
               2 <sup>+</sup>
             </h1>
@@ -183,7 +149,7 @@ function About() {
               </p>
             </div>
           </div>
-          <div className="border-2 border-stone-800 rounded-lg px-6 py-4">
+          <div className="border border-stone-800 rounded-lg px-10 py-8">
             <h1 className="font-poppins text-4xl font-extrabold text-amber-500">
               10 <sup>+</sup>
             </h1>
@@ -195,7 +161,7 @@ function About() {
               </p>
             </div>
           </div>
-          <div className="border-2 border-stone-800 rounded-lg px-6 py-4">
+          <div className="border border-stone-800 rounded-lg px-10 py-8">
             <h1 className="font-poppins text-4xl font-extrabold text-amber-500">
               2 <sup>+</sup>
             </h1>
@@ -215,8 +181,12 @@ function About() {
             <ul className="flex flex-col gap-4">
               <Link
                 to="technique"
-                onClick={() => handleTechnic()}
-                className={`${activeClass} link flex items-center justify-between py-4 px-6  rounded-lg hover:cursor-pointer`}
+                onClick={() => {
+                  handleSection("technic");
+                }}
+                className={`${
+                  activeSection === "technic" ? "bg-amber-500" : "bg-stone-800"
+                } flex items-center justify-between py-4 px-6 rounded-lg hover:bg-amber-500 hover:cursor-pointer`}
               >
                 <p className="text font-poppins uppercase font-bold">
                   technical
@@ -225,8 +195,10 @@ function About() {
               </Link>
               <Link
                 to="language"
-                onClick={() => handleLanguage()}
-                className={`${languageActive} link flex items-center justify-between py-4 px-6 bg-stone-800 rounded-lg hover:cursor-pointer`}
+                onClick={() => handleSection("language")}
+                className={`${
+                  activeSection === "language" ? "bg-amber-500" : "bg-stone-800"
+                } flex items-center justify-between py-4 px-6 rounded-lg hover:bg-amber-500 hover:cursor-pointer`}
               >
                 {" "}
                 <p className="text font-poppins uppercase font-bold">
@@ -236,8 +208,12 @@ function About() {
               </Link>
               <Link
                 to="thirdparty"
-                onClick={() => handleThirdparty()}
-                className={`${thirdpartyActive} link flex items-center justify-between py-4 px-6 bg-stone-800 rounded-lg hover:cursor-pointer`}
+                onClick={() => handleSection("thirdparty")}
+                className={`${
+                  activeSection === "thirdparty"
+                    ? "bg-amber-500"
+                    : "bg-stone-800"
+                } flex items-center justify-between py-4 px-6 rounded-lg hover:bg-amber-500 hover:cursor-pointer`}
               >
                 {" "}
                 <p className="text font-poppins uppercase font-bold">
@@ -247,8 +223,10 @@ function About() {
               </Link>
               <Link
                 to="tools"
-                onClick={() => handleTools()}
-                className={`${toolsActive} link flex items-center justify-between py-4 px-6 bg-stone-800 rounded-lg hover:cursor-pointer`}
+                onClick={() => handleSection("tools")}
+                className={`${
+                  activeSection === "tools" ? "bg-amber-500" : "bg-stone-800"
+                } flex items-center justify-between py-4 px-6 rounded-lg hover:bg-amber-500 hover:cursor-pointer`}
               >
                 {" "}
                 <p className="text font-poppins uppercase font-bold">tools</p>
@@ -256,8 +234,10 @@ function About() {
               </Link>
               <Link
                 to="project"
-                onClick={() => handleProject()}
-                className={`${projectActive} link flex items-center justify-between py-4 px-6 bg-stone-800 rounded-lg hover:cursor-pointer`}
+                onClick={() => handleSection("project")}
+                className={`${
+                  activeSection === "project" ? "bg-amber-500" : "bg-stone-800"
+                } flex items-center justify-between py-4 px-6 rounded-lg hover:bg-amber-500 hover:cursor-pointer`}
               >
                 {" "}
                 <p className="text font-poppins uppercase font-bold">

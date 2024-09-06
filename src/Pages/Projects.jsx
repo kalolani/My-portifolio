@@ -1,7 +1,6 @@
 import Navbar from "../Components/Navbar";
 import { FaRegSun } from "react-icons/fa";
 import "./projects.css";
-
 import Transition from "../Transition";
 
 function Projects() {

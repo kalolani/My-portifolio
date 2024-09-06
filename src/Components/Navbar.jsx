@@ -52,7 +52,7 @@ function Navbar() {
           </NavLink>
         </li>
         <li className="group relative">
-          <NavLink to="/project" className="inline-block rounded-lg z-50">
+          <NavLink to="/portfolio" className="inline-block rounded-lg z-50">
             {({ isActive }) => (
               <div
                 className={`text-md flex items-center gap-0 ${

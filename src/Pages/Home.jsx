@@ -4,13 +4,12 @@ import Polygon from "../Components/Polygon";
 import { HiMiniArrowSmallRight } from "react-icons/hi2";
 import { FaRegSun } from "react-icons/fa";
 import "./Home.css";
-
 import Transition from "../Transition";
 import { Link } from "react-router-dom";
 
 function Home() {
   return (
-    <div className="relative w-full h-full z-30 phone:w-full">
+    <div className="w-full h-full z-30 phone:w-full">
       <div className="absolute top-12 right-6 z-50 bg-stone-800 p-4 rounded-full hover:cursor-pointer hover:bg-amber-500 phone:invisible laptop:visible">
         <FaRegSun size={18} color="white" />
       </div>
