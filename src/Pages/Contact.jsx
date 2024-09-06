@@ -57,7 +57,7 @@ function Contact() {
           get in<span className="text-yellow-500 font-poppins"> touch</span>
         </h1>
       </div>
-      <div className="max-w-6xl m-auto grid grid-cols-1fr-3fr justify-self-center gap-6 phone:grid-cols-1 laptop:grid-cols-1fr-3fr">
+      <div className="max-w-6xl m-auto grid grid-cols-1fr-3fr justify-self-center gap-6 phone:grid-cols-1 smlaptop:max-w-[900px] laptop:max-w-[930px] desktop:max-w-6xl laptop:grid-cols-1fr-3fr">
         <div className="w-3/4 flex flex-col gap-4 phone:self-center phone:justify-self-center latop:justify-self-start laptop:w-full">
           <h1 className="uppercase font-poppins font-bold text-2xl inline phone:text-center laptop:text-start">
             {" "}
@@ -72,7 +72,7 @@ function Contact() {
             {/* <HiOutlineMailOpen size={25} className="text-yellow-300" /> */}
             <MdEmail size={25} className="text-yellow-500" />
 
-            <div className="flex flex-col gap-4">
+            <div className="flex phone:flex laptop:flex-col gap-4">
               <p className="font-poppins uppercase">mail me</p>
               <p className="font-poppins font-bold phone:text-sm">
                 kgemechu908@gmail.com
@@ -83,7 +83,7 @@ function Contact() {
             {/* s<MdEmail size={25} className="text-yellow-300" /> */}
             <FaSquarePhone size={25} className="text-yellow-500" />
 
-            <div className="flex flex-col gap-2">
+            <div className="flex phone:flex laptop:flex-col gap-2">
               <p className="font-poppins uppercase">call me</p>
               <p className="font-poppins font-bold">+251916163516</p>
             </div>

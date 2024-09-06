@@ -19,7 +19,7 @@ function Home() {
         <div className="self-center justify-self-start z-30 phone:justify-self-center phone:ml-0 laptop:justify-self-start laptop:ml-10 z-30 ">
           <img
             src="kale-ab.png"
-            className="inline-block h-90 rounded-3xl shadow-lg shadow-black z-30 phone:mt-2 phone:h-52 w-52 rounded-full border-4 border-stone-800 laptop:h-[33rem] laptop:w-[97%] laptop:rounded-3xl border-none"
+            className="inline-block h-90 rounded-3xl shadow-lg shadow-black z-30 phone:mt-2 phone:h-52 w-52 rounded-full border-4 border-stone-800 laptop:h-[30rem] desktop:h-[34rem] laptop:w-[97%] laptop:rounded-3xl border-none"
           />
         </div>
         <div className="self-center justify-self-start phone:ml-2 laptop:ml-10 phone:justify-self-end  laptop:justify-center">

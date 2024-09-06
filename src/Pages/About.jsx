@@ -21,7 +21,7 @@ function About() {
   console.log(activeSection);
 
   return (
-    <div className="mb-20 text-slate-50 w-full phone:w-full phone:mb-20">
+    <div className="mb-20 text-slate-50 w-screen phone:w-screen phone:mb-20">
       <div className="fixed top-12 right-6 z-50 bg-stone-800 p-4 rounded-full hover:cursor-pointer hover:bg-amber-500 phone:invisible laptop:visible">
         <FaRegSun size={18} color="white" />
       </div>
@@ -31,13 +31,13 @@ function About() {
           about <span className="text-amber-500 font-poppins">me</span>
         </h1>
       </div>
-      <div className="font-poppins grid grid grid-cols-2 max-w-[1150px] m-auto gap-4 phone:grid-cols-1 phone:m-auto laptop:grid-cols-2">
+      <div className="font-poppins grid grid grid-cols-2 laptop:max-w-[900px] desktop:max-w-[1150px] m-auto gap-4 phone:grid-cols-1 phone:m-auto tablet:grid-cols-2 laptop:grid-cols-2">
         <div className="">
-          <h3 className="uppercase font-poppins mb-8 text-xl font-bold phone:text-xl phone:text-start phone:px-6 mdphone:text-center laptop:text-2xl laptop:text-start laptop:px-0">
+          <h3 className="uppercase font-poppins phone:mb-4 ptab:w-[85%] ptab:text-center tablet:text-start ptab:mb-4 text-xl font-bold phone:text-xl phone:text-start phone:m-auto phone:px-6 mdphone:text-center tablet:pl-0 laptop:text-2xl laptop:text-start laptop:px-0">
             personal information
           </h3>
-          <div className="grid grid-cols-2 phone:px-8 phone:grid-cols-1 phone:gap-6 mtab:grid-cols-2 tablet:gap-20 laptop:gap-0 laptop:px-0">
-            <div className="flex flex-col gap-6 mdphone:items-center mtab:items-start tablet:items-end laptop:items-start">
+          <div className="grid grid-cols-2 phone:px-8 w-[85%] laptop:w-full phone:m-auto phone:grid-cols-1 phone:gap-6 ptab:grid-cols-2 tablet:grid-cols-1 laptop:grid-cols-[auto_1fr] tablet:gap-0 laptop:gap-10 laptop:px-0">
+            <div className="flex flex-col gap-6 mdphone:items-center ptab:items-start tablet:items-start laptop:items-start">
               <p className="font-poppins">
                 <span className="font-poppins text-md text-gray-400">
                   {" "}
@@ -69,7 +69,7 @@ function About() {
                 : <span className="bold font-poppins text-md">Available</span>
               </p>
             </div>
-            <div className="flex flex-col gap-6 mdphone:items-center mtab:items-start">
+            <div className="flex flex-col gap-6 mdphone:items-center ptab:items-start tablet:items-start">
               <p className="font-poppins phone:text-base">
                 <span className="font-poppins text-gray-400 text-md">
                   Address
@@ -113,7 +113,7 @@ function About() {
               </p>
             </div>
           </div>
-          <div className="flex justify-start items-center mb-4 phone:justify-start mdphone:justify-center mtab:justify-start tablet:justify-center tablet:mt-0 laptop:justify-start">
+          <div className="flex justify-start items-center mb-4 phone:justify-center phone:mt-4 mdphone:justify-center mtab:justify-center tablet:justify-center tablet:mr-20 tablet:mt-4 laptop:justify-start">
             <a
               href="/assets/CV.pdf"
               download="kal intern resume.pdf"
@@ -131,7 +131,7 @@ function About() {
             </h1>
             <div className="flex items-start gap-4">
               <div className="w-8 h-0.5 bg-gray-600 mt-3"></div>
-              <p className="font-poppins uppercase text-xl">
+              <p className="font-poppins uppercase tablet:text-sm laptop:text-xl">
                 years of <br />
                 experiance
               </p>
@@ -143,7 +143,7 @@ function About() {
             </h1>
             <div className="flex items-start gap-4">
               <div className="w-8 h-0.5 bg-gray-600 mt-3"></div>
-              <p className="font-poppins uppercase text-xl">
+              <p className="font-poppins uppercase tablet:text-sm laptop:text-xl">
                 years of <br />
                 experiance
               </p>
@@ -155,7 +155,7 @@ function About() {
             </h1>
             <div className="flex items-start gap-4">
               <div className="w-8 h-0.5 bg-gray-600 mt-3"></div>
-              <p className="font-poppins uppercase text-xl">
+              <p className="font-poppins uppercase tablet:text-sm laptop:text-xl">
                 project&apos;s <br />
                 completed
               </p>
@@ -167,7 +167,7 @@ function About() {
             </h1>
             <div className="flex items-start gap-4">
               <div className="w-8 h-0.5 bg-gray-600 mt-3"></div>
-              <p className="font-poppins uppercase text-xl">
+              <p className="font-poppins uppercase tablet:text-sm laptop:text-xl">
                 years of <br />
                 experiance
               </p>
@@ -175,7 +175,7 @@ function About() {
           </div>
         </div>
       </div>
-      <div className="font-poppins max-w-5xl m-auto mt-20 mb-20 py-16 bg-stone-900 rounded-2xl px-6 phone:px-4">
+      <div className="font-poppins tablet:max-w-3xl laptop:max-w-[900px] desktop:max-w-[1100px] m-auto mt-20 mb-20 py-16 bg-stone-900 rounded-2xl px-6 phone:px-4">
         <div className="grid grid-cols-2 gap-6 phone:grid-cols-1 btablet:grid-cols-2">
           <div>
             <ul className="flex flex-col gap-4">

@@ -19,20 +19,20 @@
   pointer-events: none; /* Prevent interaction with the background text */
 }
 @media (min-width: 320px) {
-  .text-container::before {
-    font-size: 4rem;
-    letter-spacing: 5px;
+  .text-containers::before {
+    font-size: 4.2rem;
+    letter-spacing: 6px;
   }
 }
 @media (min-width: 500px) {
-  .text-container::before {
+  .text-containers::before {
     font-size: 5rem;
     letter-spacing: 6px;
   }
 }
 @media (min-width: 1024px) {
-  .text-container::before {
-    font-size: 7rem;
+  .text-containers::before {
+    font-size: 7.5rem;
     letter-spacing: 8px;
   }
 }

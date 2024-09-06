@@ -41,7 +41,7 @@ function Navbar() {
               >
                 <div className="w-0 h-full group-hover:w-full group-hover:h-full transition-all duration-[500ms] origin-right">
                   <p className="font-poppins text-white w-0 h-full opacity-0 group-hover:opacity-100 group-hover:w-full group-hover:h-full transition-all duration-[50ms] origin-left will-change-transform">
-                    home
+                    about
                   </p>
                 </div>
                 <div>
