@@ -16,16 +16,16 @@ function Projects() {
         </h1>
       </div>
       <div className="mb-8">
-        <div className="max-w-5xl m-auto grid grid-cols-3 gap-x-8 gap-y-16 items-center justify-items-center phone:grid-cols-1 phone:px-4 tablet:grid-cols-2 laptop:grid-cols-3 laptop:px-0 overflow-hidden">
+        <div className="max-w-5xl m-auto grid grid-cols-3 gap-x-8 gap-y-16 items-center justify-items-center phone:grid-cols-1 phone:px-4 tablet:grid-cols-2 laptop:grid-cols-3 laptop:px-0 laptop:max-w-[800px] desktop:max-w-5xl overflow-hidden">
           <div className="group z-0 relative parent rounded-md border-2 border-amber-500 overflow-hidden hover:cursor-pointer">
-            <div className="absolute bg-amber-500 w-full h-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 scale-0 opacity-0 group-hover:scale-100 group-hover:opacity-100 grid items-center justify-items-center transition-all duration-[500ms] origin-center">
+            <div className="absolute bg-amber-500 bg-opacity-85 w-full h-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 scale-0 opacity-0 group-hover:scale-110 group-hover:opacity-100 grid items-center justify-items-center transition-all duration-[500ms] origin-center overflow-hidden">
               <p className="font-poppins uppercase w-3/4 self-center text-center">
                 landing page for tour organizer company
               </p>
               <a
                 href="https://kal-natours-project.netlify.app/"
                 target="_blank"
-                className="uppercase inline-block px-6 py-2 border bg-amber-500 hover:bg-amber-950 rounded-sm justify-self-center m-0"
+                className="uppercase inline-block px-6 py-2 border bg-amber-700 hover:bg-amber-950 rounded-sm justify-self-center m-0"
               >
                 visit
               </a>
@@ -37,14 +37,14 @@ function Projects() {
           </div>
           <div className="group z-0 relative parent rounded-md border-2 border-amber-500 overflow-hidden  hover:cursor-pointer ">
             {" "}
-            <div className="absolute bg-amber-500 w-full h-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 scale-0 opacity-0 group-hover:scale-100 group-hover:opacity-100 grid items-center justify-items-center transition-all duration-[500ms] origin-center">
+            <div className="absolute bg-amber-500 bg-opacity-85 w-full h-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 scale-0 opacity-0 group-hover:scale-110 group-hover:opacity-100 grid items-center justify-items-center transition-all duration-[500ms] origin-center">
               <p className="font-poppins uppercase w-3/4 self-center text-center">
                 landing page for real estate company
               </p>
               <a
                 href="https://kal-nexter.netlify.app/"
                 target="_blank"
-                className="uppercase inline-block px-6 py-2 border bg-amber-500 hover:bg-amber-950 rounded-sm justify-self-center m-0"
+                className="uppercase inline-block px-6 py-2 border bg-amber-700 hover:bg-amber-950 rounded-sm justify-self-center m-0"
               >
                 visit
               </a>
@@ -53,14 +53,14 @@ function Projects() {
           </div>
           <div className="group z-0 relative parent rounded-md border-2 border-amber-500 overflow-hidden  hover:cursor-pointer">
             {" "}
-            <div className="absolute bg-amber-500 w-full h-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 scale-0 opacity-0 group-hover:scale-100 group-hover:opacity-100 grid items-center justify-items-center transition-all duration-[500ms] origin-center">
+            <div className="absolute bg-amber-500 bg-opacity-85 w-full h-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 scale-0 opacity-0 group-hover:scale-110 group-hover:opacity-100 grid items-center justify-items-center transition-all duration-[500ms] origin-center">
               <p className="font-poppins uppercase w-3/4 self-center text-center">
                 website for food delivery company
               </p>
               <a
                 href="https://kal-omni.netlify.app/"
                 target="_blank"
-                className="uppercase inline-block px-6 py-2 border bg-amber-500 hover:bg-amber-950 justify-self-center m-0"
+                className="uppercase inline-block px-6 py-2 border bg-amber-700 hover:bg-amber-950 justify-self-center m-0"
               >
                 visit
               </a>
@@ -69,14 +69,14 @@ function Projects() {
           </div>
           <div className="group relative parent rounded-md border-2 border-amber-500 overflow-hidden  hover:cursor-pointer">
             {" "}
-            <div className="absolute bg-amber-500 w-full h-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 scale-0 opacity-0 group-hover:scale-100 group-hover:opacity-100 grid items-center justify-items-center transition-all duration-[500ms] origin-center">
+            <div className="absolute bg-amber-500 bg-opacity-85 w-full h-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 scale-0 opacity-0 group-hover:scale-110 group-hover:opacity-100 grid items-center justify-items-center transition-all duration-[500ms] origin-center">
               <p className="font-poppins uppercase w-3/4 self-center text-center">
                 landing page for airlines company
               </p>
               <a
                 href="https://kal-project-5.netlify.app/"
                 target="_blank"
-                className="uppercase inline-block px-6 py-2 border bg-amber-500 hover:bg-amber-950 rounded-sm justify-self-center m-0"
+                className="uppercase inline-block px-6 py-2 border bg-amber-700 hover:bg-amber-950 rounded-sm justify-self-center m-0"
               >
                 visit
               </a>
@@ -85,7 +85,7 @@ function Projects() {
           </div>
           <div className="group relative parent rounded-md border-2 border-amber-500 overflow-hidden  hover:cursor-pointer">
             {" "}
-            <div className="absolute bg-amber-500 w-full h-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 scale-0 opacity-0 group-hover:scale-100 group-hover:opacity-100 grid items-center justify-items-center transition-all duration-[500ms] origin-center">
+            <div className="absolute bg-amber-500 bg-opacity-85 w-full h-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 scale-0 opacity-0 group-hover:scale-110 group-hover:opacity-100 grid items-center justify-items-center transition-all duration-[500ms] origin-center">
               <p className="font-poppins uppercase w-3/4 self-center text-center">
                 mern stack food delivery web app, including chapa payment
                 integration
@@ -93,7 +93,7 @@ function Projects() {
               <a
                 href="https://food-delivery-frontend-u8jx.onrender.com/"
                 target="_blank"
-                className="uppercase inline-block px-6 py-2 border bg-amber-500 hover:bg-amber-950 rounded-sm justify-self-center m-0"
+                className="uppercase inline-block px-6 py-2 border bg-amber-700 hover:bg-amber-950 rounded-sm justify-self-center m-0"
               >
                 visit
               </a>
@@ -102,7 +102,7 @@ function Projects() {
           </div>
           <div className="group relative parent rounded-md border-2 border-amber-500 overflow-hidden  hover:cursor-pointer">
             {" "}
-            <div className="absolute bg-amber-500 w-full h-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 scale-0 opacity-0 group-hover:scale-100 group-hover:opacity-100 grid items-center justify-items-center transition-all duration-[500ms] origin-center">
+            <div className="absolute bg-amber-500 bg-opacity-85 w-full h-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 scale-0 opacity-0 group-hover:scale-110 group-hover:opacity-100 grid items-center justify-items-center transition-all duration-[500ms] origin-center">
               <p className="font-poppins uppercase w-3/4 self-center text-center">
                 dashboard for the food delivery web app
               </p>
@@ -112,7 +112,7 @@ function Projects() {
               <a
                 href="https://food-delivery-admin-hzdt.onrender.com/"
                 target="_blank"
-                className="uppercase inline-block px-6 py-2 border bg-amber-500 hover:bg-amber-950 rounded-sm justify-self-center m-0"
+                className="uppercase inline-block px-6 py-2 border bg-amber-700 hover:bg-amber-950 rounded-sm justify-self-center m-0"
               >
                 visit
               </a>
@@ -121,14 +121,14 @@ function Projects() {
           </div>
           <div className="group relative parent rounded-md border-2 border-amber-500 overflow-hidden  hover:cursor-pointer">
             {" "}
-            <div className="absolute bg-amber-500 w-full h-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 scale-0 opacity-0 group-hover:scale-100 group-hover:opacity-100 grid items-center justify-items-center transition-all duration-[500ms] origin-center">
+            <div className="absolute bg-amber-500 bg-opacity-85 w-full h-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 scale-0 opacity-0 group-hover:scale-110 group-hover:opacity-100 grid items-center justify-items-center transition-all duration-[500ms] origin-center">
               <p className="font-poppins uppercase w-3/4 self-center text-center">
                 a simple demo landing page for pizza cafe using react
               </p>
               <a
                 href="https://kal-pizza-menu.netlify.app/"
                 target="_blank"
-                className="uppercase inline-block px-6 py-2 border bg-amber-500 hover:bg-amber-950 rounded-sm justify-self-center m-0"
+                className="uppercase inline-block px-6 py-2 border bg-amber-700 hover:bg-amber-950 rounded-sm justify-self-center m-0"
               >
                 visit
               </a>
@@ -137,14 +137,14 @@ function Projects() {
           </div>
           <div className="group relative parent rounded-md border-2 border-amber-500 overflow-hidden  hover:cursor-pointer">
             {" "}
-            <div className="absolute bg-amber-500 w-full h-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 scale-0 opacity-0 group-hover:scale-100 group-hover:opacity-100 grid items-center justify-items-center transition-all duration-[500ms] origin-center">
+            <div className="absolute bg-amber-500 bg-opacity-85 w-full h-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 scale-0 opacity-0 group-hover:scale-110 group-hover:opacity-100 grid items-center justify-items-center transition-all duration-[500ms] origin-center">
               <p className="font-poppins uppercase w-3/4 self-center text-center">
                 weather web app for my affronex internship, used openWeather api
               </p>
               <a
                 href="https://afronex-task-2-kappa.vercel.app/"
                 target="_blank"
-                className="uppercase inline-block px-6 py-2 border bg-amber-500 hover:bg-amber-950 rounded-sm justify-self-center m-0"
+                className="uppercase inline-block px-6 py-2 border bg-amber-700 hover:bg-amber-950 rounded-sm justify-self-center m-0"
               >
                 visit
               </a>
@@ -153,14 +153,14 @@ function Projects() {
           </div>
           <div className="group relative parent rounded-md border-2 border-amber-500 overflow-hidden  hover:cursor-pointer">
             {" "}
-            <div className="absolute bg-amber-500 w-full h-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 scale-0 opacity-0 group-hover:scale-100 group-hover:opacity-100 grid items-center justify-items-center transition-all duration-[500ms] origin-center">
+            <div className="absolute bg-amber-500 bg-opacity-85 w-full h-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 scale-0 opacity-0 group-hover:scale-110 group-hover:opacity-100 grid items-center justify-items-center transition-all duration-[500ms] origin-center">
               <p className="font-poppins uppercase w-3/4 self-center text-center">
                 landing page for tour organizer company
               </p>
               <a
                 href="https://kal-natours-project.netlify.app/"
                 target="_blank"
-                className="uppercase inline-block px-6 py-2 border bg-amber-500 hover:bg-amber-950 rounded-sm justify-self-center m-0"
+                className="uppercase inline-block px-6 py-2 border bg-amber-700 hover:bg-amber-950 rounded-sm justify-self-center m-0"
               >
                 visit
               </a>

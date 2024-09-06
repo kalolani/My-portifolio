@@ -10,7 +10,7 @@ import "./Navbar.css";
 function Navbar() {
   return (
     <>
-      <ul className="fixed top-1/2 right-7 -translate-x-1/2 -translate-y-1/2 flex flex-col gap-12 phone:invisible phone:z-0 laptop:visible laptop:z-50">
+      <ul className="fixed top-1/2 right-7 -translate-x-1/2 -translate-y-1/2 flex flex-col gap-12 phone:invisible phone:opacity-0 phone:z-0 laptop:visible laptop:opacity-100 laptop:z-50">
         <li className="group relative">
           <NavLink to="/" className="inline-block rounded-lg z-50">
             {({ isActive }) => (

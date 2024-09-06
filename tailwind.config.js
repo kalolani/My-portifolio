@@ -52,7 +52,7 @@ export default {
       tablet: "768px",
       // => @media (min-width: 768px) { ... }
       btablet: "850px",
-
+      smlaptop: "900px",
       laptop: "1024px",
       // => @media (min-width: 1024px) { ... }
 
