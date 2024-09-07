@@ -10,7 +10,9 @@ function Projects({ theme, toggleTheme }) {
     <div className="h-full w-full">
       <div
         onClick={toggleTheme}
-        className="fixed top-12 right-6 z-50 bg-stone-800 p-4 rounded-full hover:cursor-pointer hover:bg-amber-500 phone:invisible laptop:visible"
+        className={`absolute top-12 right-7 z-50 ${
+          theme === "light" ? "bg-stone-400" : "bg-stone-800"
+        } p-4 rounded-full hover:cursor-pointer hover:bg-amber-500 phone:invisible laptop:visible`}
       >
         {theme === "light" ? (
           <MdOutlineWbSunny size={18} color="white" />

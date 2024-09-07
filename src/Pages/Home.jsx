@@ -15,7 +15,7 @@ function Home({ theme, toggleTheme }) {
     <div className="w-full h-screen z-30 phone:w-full">
       <div
         onClick={toggleTheme}
-        className={`absolute top-12 right-8 z-50 ${
+        className={`absolute top-12 right-7 z-50 ${
           theme === "light" ? "bg-stone-400" : "bg-stone-800"
         } p-4 rounded-full hover:cursor-pointer hover:bg-amber-500 phone:invisible laptop:visible`}
       >
