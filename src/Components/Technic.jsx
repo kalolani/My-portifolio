@@ -13,89 +13,46 @@ function Technic() {
         <p className="font-poppins font-bold text-sm phone:font-normal">
           React
         </p>
-        {/* <RiReactjsFill
-          size={20}
-          color="rgb(21 128 61)"
-          className="phone:w-0 ptab:w-full"
-        /> */}
       </div>
-      <div className="hover:cursor-pointer hover:bg-stone-700 flex items-center gap-2 font-poppins border-2 border-yellow-300 rounded-lg inline-block justify-self-center self-center px-4 py-2">
+      <div className="hover:cursor-pointer hover:bg-stone-7 00 flex items-center gap-2 font-poppins border-2 border-yellow-300 rounded-lg inline-block justify-self-center self-center px-4 py-2">
         <p className="font-poppins font-bold text-sm phone:font-normal">
           Express Js
         </p>
-        {/* <SiExpress
-          size={20}
-          color="rgb(21 128 61)"
-          className="phone:w-0 ptab:w-full"
-        /> */}
       </div>
       <div className="hover:cursor-pointer hover:bg-stone-700 flex items-center gap-2 font-poppins border-2 border-yellow-300 rounded-lg inline-block justify-self-start self-center px-4 py-2 phone:justify-self-center">
         <p className="font-poppins font-bold text-sm phone:font-normal">
           Node Js
         </p>
-        {/* <FaNodeJs
-          size={20}
-          color="rgb(21 128 61)"
-          className="phone:w-0 ptab:w-full"
-        /> */}
       </div>
       <div className="hover:cursor-pointer hover:bg-stone-700 flex items-center gap-2 font-poppins border-2 border-yellow-300 rounded-lg inline-block justify-self-center self-center px-4 py-2">
         <p className="font-poppins font-bold text-sm phone:font-normal">
           Mongo DB
         </p>
-        {/* <SiMongodb
-          size={20}
-          color="rgb(21 128 61)"
-          className="phone:w-0 ptab:w-full"
-        /> */}
       </div>
       <div className="hover:cursor-pointer hover:bg-stone-700 flex items-center gap-2 font-poppins border-2 border-yellow-300 rounded-lg inline-block justify-self-center self-center px-4 py-2">
         <p className="font-poppins font-bold text-sm phone:font-normal">
           Tailwind css
         </p>
-        {/* <RiTailwindCssFill
-          size={20}
-          color="rgb(21 128 61)"
-          className="phone:w-0 ptab:w-full"
-        /> */}
       </div>
       <div className="hover:cursor-pointer hover:bg-stone-700 flex items-center gap-2 font-poppins border-2 border-yellow-300 rounded-lg inline-block justify-self-center self-center px-4 py-2">
         <p className="font-poppins font-bold text-sm phone:font-normal">
           Javascript
         </p>
-        {/* <SiJavascript
-          size={20}
-          color="rgb(21 128 61)"
-          className="phone:w-0 ptab:w-full"
-        /> */}
       </div>
       <div className="hover:cursor-pointer hover:bg-stone-700 flex items-center gap-2 font-poppins border-2 border-yellow-300 rounded-lg inline-block justify-self-end self-center px-4 py-2 phone:justify-self-center">
         <p className="font-poppins font-bold text-sm phone:font-normal">
           Redux
         </p>
-        {/* <SiRedux
-          size={20}
-          color="rgb(21 128 61)"
-          className="phone:w-0 ptab:w-full"
-        /> */}
       </div>
       <div className="hover:cursor-pointer hover:bg-stone-700 flex items-center gap-2 font-poppins border-2 border-yellow-300 rounded-lg inline-block justify-self-center self-center px-4 py-2">
         <p className="font-poppins font-bold text-sm phone:font-normal">
           React Router
         </p>
-        {/* <img
-          src="../reactrouter.png"
-          className="h-10 w-10 phone:w-0 ptab:w-full"
-        /> */}
       </div>
       <div className="hover:cursor-pointer hover:bg-stone-700 flex items-center gap-2 font-poppins border-2 border-yellow-300 rounded-lg inline-block justify-self-start self-center px-4 py-2 phone:justify-self-center phone:justify-self-center">
         <p className="font-poppins font-bold text-sm phone:font-normal">
           React Query
         </p>
-        {/* <img
-          src="../react-query.png"
-          className="h-10 w-10 phone:w-0 ptab:w-full"
-        /> */}
       </div>
     </div>
   );

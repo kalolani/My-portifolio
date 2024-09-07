@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { NavLink } from "react-router-dom";
 import { IoHomeSharp } from "react-icons/io5";
 import { FaUserGroup } from "react-icons/fa6";
@@ -7,7 +8,7 @@ import { BsBagFill } from "react-icons/bs";
 
 import "./Navbar.css";
 
-function Navbar() {
+function Navbar({ theme }) {
   return (
     <>
       <ul className="fixed top-1/2 right-7 -translate-x-1/2 -translate-y-1/2 flex flex-col gap-12 phone:invisible phone:opacity-0 phone:z-0 laptop:visible laptop:opacity-100 laptop:z-50">
@@ -16,7 +17,9 @@ function Navbar() {
             {({ isActive }) => (
               <div
                 className={`text-md flex items-center gap-0 ${
-                  isActive ? "bg-amber-500" : "bg-stone-800"
+                  !isActive && theme === "light" ? "bg-stone-400" : ""
+                } ${!isActive && theme === "dark" ? "bg-stone-800" : ""} ${
+                  isActive ? "bg-amber-500" : ""
                 } hover:bg-amber-500 active:bg-amber-500 group-hover:gap-4 py-3 group-hover:py-3 px-4 absolute right-0 top-0 rounded-full z-0 uppercase transition-all duration-[400ms] origin-left will-change-transform`}
               >
                 <div className="w-0 group-hover:w-full transition-all duration-[500ms]">
@@ -36,7 +39,9 @@ function Navbar() {
             {({ isActive }) => (
               <div
                 className={`text-md flex items-center gap-0 ${
-                  isActive ? "bg-amber-500" : "bg-stone-800"
+                  !isActive && theme === "light" ? "bg-stone-400" : ""
+                } ${!isActive && theme === "dark" ? "bg-stone-800" : ""} ${
+                  isActive ? "bg-amber-500" : ""
                 } hover:bg-amber-500 active:bg-amber-500 group-hover:gap-4 py-3 group-hover:py-3 px-4 absolute right-0 top-0 rounded-full z-0 uppercase transition-all duration-[400ms] origin-left will-change-transform`}
               >
                 <div className="w-0 h-full group-hover:w-full group-hover:h-full transition-all duration-[500ms] origin-right">
@@ -56,12 +61,14 @@ function Navbar() {
             {({ isActive }) => (
               <div
                 className={`text-md flex items-center gap-0 ${
-                  isActive ? "bg-amber-500" : "bg-stone-800"
+                  !isActive && theme === "light" ? "bg-stone-400" : ""
+                } ${!isActive && theme === "dark" ? "bg-stone-800" : ""} ${
+                  isActive ? "bg-amber-500" : ""
                 } hover:bg-amber-500 active:bg-amber-500 group-hover:gap-4 py-3 group-hover:py-3 px-4 absolute right-0 top-0 rounded-full z-0 uppercase transition-all duration-[400ms] origin-left will-change-transform`}
               >
                 <div className="w-0 h-full group-hover:w-full group-hover:h-full transition-all duration-[500ms] origin-right">
                   <p className="font-poppins text-white w-0 h-full opacity-0 group-hover:opacity-100 group-hover:w-full group-hover:h-full transition-all duration-[50ms] origin-left will-change-transform">
-                    home
+                    projects
                   </p>
                 </div>
                 <div>
@@ -76,12 +83,14 @@ function Navbar() {
             {({ isActive }) => (
               <div
                 className={`text-md flex items-center gap-0 ${
-                  isActive ? "bg-amber-500" : "bg-stone-800"
+                  !isActive && theme === "light" ? "bg-stone-400" : ""
+                } ${!isActive && theme === "dark" ? "bg-stone-800" : ""} ${
+                  isActive ? "bg-amber-500" : ""
                 } hover:bg-amber-500 active:bg-amber-500 group-hover:gap-4 py-3 group-hover:py-3 px-4 absolute right-0 top-0 rounded-full z-0 uppercase transition-all duration-[400ms] origin-left will-change-transform`}
               >
                 <div className="w-0 h-full group-hover:w-full group-hover:h-full transition-all duration-[500ms] origin-right">
                   <p className="font-poppins text-white w-0 h-full opacity-0 group-hover:opacity-100 group-hover:w-full group-hover:h-full transition-all duration-[50ms] origin-left will-change-transform">
-                    home
+                    contact
                   </p>
                 </div>
                 <div>

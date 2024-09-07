@@ -1,5 +1,5 @@
+/* eslint-disable react/prop-types */
 import Navbar from "../Components/Navbar";
-import { FaRegSun } from "react-icons/fa";
 import { HiMiniArrowSmallRight } from "react-icons/hi2";
 import { HiOutlineCodeBracketSquare } from "react-icons/hi2";
 import { IoCodeSlashOutline } from "react-icons/io5";
@@ -9,10 +9,11 @@ import { IoGitBranchOutline } from "react-icons/io5";
 import { Link, Outlet } from "react-router-dom";
 import "./About.css";
 import { useStores } from "../contexts/storeContext";
-
+import { MdOutlineWbSunny } from "react-icons/md";
+import { MdNightlightRound } from "react-icons/md";
 import Transition from "../Transition";
 
-function About() {
+function About({ theme, toggleTheme }) {
   const { activeSection, setActiveSection } = useStores();
 
   function handleSection(section) {
@@ -21,13 +22,20 @@ function About() {
   console.log(activeSection);
 
   return (
-    <div className="mb-20 text-slate-50 w-screen phone:w-screen phone:mb-20">
-      <div className="fixed top-12 right-6 z-50 bg-stone-800 p-4 rounded-full hover:cursor-pointer hover:bg-amber-500 phone:invisible laptop:visible">
-        <FaRegSun size={18} color="white" />
+    <div className="mb-20 w-full phone:w-screen phone:mb-20">
+      <div
+        onClick={toggleTheme}
+        className="fixed top-12 right-6 z-50 bg-stone-800 p-4 rounded-full hover:cursor-pointer hover:bg-amber-500 phone:invisible laptop:visible"
+      >
+        {theme === "light" ? (
+          <MdOutlineWbSunny size={18} color="white" />
+        ) : (
+          <MdNightlightRound size={18} color="white" />
+        )}
       </div>
-      <Navbar />
-      <div className="relative text-containers">
-        <h1 className="font-poppins text-3xl text-center my-20 uppercase text-6xl font-extrabold text-gray-50 phone:text-4xl ptab:text-5xl laptop:text-6xl laptop:my-16">
+      <Navbar theme={theme} />
+      <div className="relative text-containers z-10">
+        <h1 className="font-poppins text-3xl text-center py-20 uppercase text-6xl font-extrabold phone:text-4xl ptab:text-5xl laptop:text-6xl laptop:py-16">
           about <span className="text-amber-500 font-poppins">me</span>
         </h1>
       </div>
@@ -39,74 +47,49 @@ function About() {
           <div className="grid grid-cols-2 phone:px-8 w-[85%] laptop:w-full phone:m-auto phone:grid-cols-1 phone:gap-6 ptab:grid-cols-2 tablet:grid-cols-1 laptop:grid-cols-[auto_1fr] tablet:gap-0 laptop:gap-10 laptop:px-0">
             <div className="flex flex-col gap-6 mdphone:items-center ptab:items-start tablet:items-start laptop:items-start">
               <p className="font-poppins">
-                <span className="font-poppins text-md text-gray-400">
-                  {" "}
-                  First Name
-                </span>{" "}
-                : <span className="bold font-poppins text-md">Kaleab</span>
+                <span className="font-poppins text-md"> First Name</span> :{" "}
+                <span className="bold font-poppins text-md">Kaleab</span>
               </p>
               <p className="font-poppins">
-                <span className="font-poppins text-gray-400 text-md">
-                  {" "}
-                  Last Name
-                </span>{" "}
-                : <span className="bold font-poppins text-md">Gemechu</span>
+                <span className="font-poppins text-md"> Last Name</span> :{" "}
+                <span className="bold font-poppins text-md">Gemechu</span>
               </p>
               <p className="font-poppins">
-                <span className="font-poppns text-gray-400 text-md"> Age</span>{" "}
-                : <span className="bold font-poppins text-md">24 Years</span>
+                <span className="font-poppns text-md"> Age</span> :{" "}
+                <span className="bold font-poppins text-md">24 Years</span>
               </p>
               <p className="font-poppins">
-                <span className="font-poppins text-gray-400 text-md">
-                  Nationality
-                </span>{" "}
-                : <span className="bold font-poppins text-md">Ethiopian</span>
+                <span className="font-poppins text-md">Nationality</span> :{" "}
+                <span className="bold font-poppins text-md">Ethiopian</span>
               </p>
               <p className="font-poppins">
-                <span className="font-poppins text-gray-400 text-md">
-                  Freelance
-                </span>{" "}
-                : <span className="bold font-poppins text-md">Available</span>
+                <span className="font-poppins text-md">Freelance</span> :{" "}
+                <span className="bold font-poppins text-md">Available</span>
               </p>
             </div>
             <div className="flex flex-col gap-6 mdphone:items-center ptab:items-start tablet:items-start">
               <p className="font-poppins phone:text-base">
-                <span className="font-poppins text-gray-400 text-md">
-                  Address
-                </span>{" "}
-                : <span className="bold font-poppins text-md">Dilla</span>
+                <span className="font-poppins text-md">Address</span> :{" "}
+                <span className="bold font-poppins text-md">Dilla</span>
               </p>
               <p className="font-poppins">
-                <span className="font-poppins text-gray-400 text-md">
-                  Phone
-                </span>{" "}
-                :{" "}
+                <span className="font-poppins text-md">Phone</span> :{" "}
                 <span className="bold font-poppins text-md">+251916163516</span>
               </p>
               <p className="font-poppins phone:text-base">
-                <span className="font-poppins text-gray-400 text-md">
-                  {" "}
-                  Email
-                </span>{" "}
-                :{" "}
+                <span className="font-poppins text-md"> Email</span> :{" "}
                 <span className="bold font-poppins text-md">
                   kgemechu908@gmail.com
                 </span>
               </p>
               <p className="font-poppins">
-                <span className="font-poppins text-gray-400 text-md">
-                  Github
-                </span>{" "}
-                :{" "}
+                <span className="font-poppins text-md">Github</span> :{" "}
                 <span className="bold font-poppins text-md">
                   www.github.com/kalolani
                 </span>
               </p>
               <p className="font-poppins">
-                <span className="font-poppins text-gray-400 text-md">
-                  Language
-                </span>{" "}
-                :{" "}
+                <span className="font-poppins text-md">Language</span> :{" "}
                 <span className="bold font-poppins text-md ">
                   Amharic,English,Afaan Oromo
                 </span>
@@ -117,7 +100,7 @@ function About() {
             <a
               href="/assets/CV.pdf"
               download="kal intern resume.pdf"
-              className="custom-button btn-arrow text-white border-2 px-4 py-2 rounded-lg border-amber-400 flex items-center"
+              className="custom-button btn-arrow border-2 px-4 py-2 rounded-lg border-amber-400 flex items-center"
             >
               <span className="font-poppins uppercase">download cv</span>
               <HiMiniArrowSmallRight size={30} className="btn-arrow" />
@@ -175,7 +158,7 @@ function About() {
           </div>
         </div>
       </div>
-      <div className="font-poppins tablet:max-w-3xl laptop:max-w-[900px] desktop:max-w-[1100px] m-auto mt-20 mb-20 py-16 bg-stone-900 rounded-2xl px-6 phone:px-4">
+      <div className="font-poppins tablet:max-w-3xl laptop:max-w-[900px] desktop:max-w-[1100px] m-auto mt-20 mb-20 py-16 bg-stone-600 rounded-2xl px-6 phone:px-4">
         <div className="grid grid-cols-2 gap-6 phone:grid-cols-1 btablet:grid-cols-2">
           <div>
             <ul className="flex flex-col gap-4">
@@ -185,7 +168,7 @@ function About() {
                   handleSection("technic");
                 }}
                 className={`${
-                  activeSection === "technic" ? "bg-amber-500" : "bg-stone-800"
+                  activeSection === "technic" ? "bg-amber-500" : "bg-stone-400"
                 } flex items-center justify-between py-4 px-6 rounded-lg hover:bg-amber-500 hover:cursor-pointer`}
               >
                 <p className="text font-poppins uppercase font-bold">
@@ -197,7 +180,7 @@ function About() {
                 to="language"
                 onClick={() => handleSection("language")}
                 className={`${
-                  activeSection === "language" ? "bg-amber-500" : "bg-stone-800"
+                  activeSection === "language" ? "bg-amber-500" : "bg-stone-400"
                 } flex items-center justify-between py-4 px-6 rounded-lg hover:bg-amber-500 hover:cursor-pointer`}
               >
                 {" "}
@@ -212,7 +195,7 @@ function About() {
                 className={`${
                   activeSection === "thirdparty"
                     ? "bg-amber-500"
-                    : "bg-stone-800"
+                    : "bg-stone-400"
                 } flex items-center justify-between py-4 px-6 rounded-lg hover:bg-amber-500 hover:cursor-pointer`}
               >
                 {" "}
@@ -225,7 +208,7 @@ function About() {
                 to="tools"
                 onClick={() => handleSection("tools")}
                 className={`${
-                  activeSection === "tools" ? "bg-amber-500" : "bg-stone-800"
+                  activeSection === "tools" ? "bg-amber-500" : "bg-stone-400"
                 } flex items-center justify-between py-4 px-6 rounded-lg hover:bg-amber-500 hover:cursor-pointer`}
               >
                 {" "}
@@ -236,7 +219,7 @@ function About() {
                 to="project"
                 onClick={() => handleSection("project")}
                 className={`${
-                  activeSection === "project" ? "bg-amber-500" : "bg-stone-800"
+                  activeSection === "project" ? "bg-amber-500" : "bg-stone-400"
                 } flex items-center justify-between py-4 px-6 rounded-lg hover:bg-amber-500 hover:cursor-pointer`}
               >
                 {" "}

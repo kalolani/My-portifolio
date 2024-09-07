@@ -1,17 +1,26 @@
+/* eslint-disable react/prop-types */
 import Navbar from "../Components/Navbar";
-import { FaRegSun } from "react-icons/fa";
+import { MdOutlineWbSunny } from "react-icons/md";
+import { MdNightlightRound } from "react-icons/md";
 import "./projects.css";
 import Transition from "../Transition";
 
-function Projects() {
+function Projects({ theme, toggleTheme }) {
   return (
-    <div className="h-full w-full text-slate-50">
-      <div className="fixed top-12 right-6 z-50 bg-stone-800 p-4 rounded-full hover:cursor-pointer hover:bg-amber-500 phone:invisible laptop:visible">
-        <FaRegSun size={18} color="white" />
+    <div className="h-full w-full">
+      <div
+        onClick={toggleTheme}
+        className="fixed top-12 right-6 z-50 bg-stone-800 p-4 rounded-full hover:cursor-pointer hover:bg-amber-500 phone:invisible laptop:visible"
+      >
+        {theme === "light" ? (
+          <MdOutlineWbSunny size={18} color="white" />
+        ) : (
+          <MdNightlightRound size={18} color="white" />
+        )}
       </div>
-      <Navbar />,
-      <div className="relative text-container">
-        <h1 className="font-poppins text-6xl text-center my-24 uppercase font-extrabold text-gray-50 phone:text-4xl ptab:text-5xl laptop:text-6xl laptop:my-16">
+      <Navbar theme={theme} />,
+      <div className="relative text-container z-0">
+        <h1 className="font-poppins text-6xl text-center my-24 uppercase font-extrabold phone:text-4xl ptab:text-5xl laptop:text-6xl laptop:my-16">
           my <span className="text-yellow-500 font-poppins">portfolio</span>
         </h1>
       </div>
