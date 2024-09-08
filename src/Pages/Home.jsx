@@ -26,9 +26,9 @@ function Home({ theme, toggleTheme }) {
         } p-4 rounded-full hover:cursor-pointer hover:bg-amber-500 phone:invisible laptop:visible`}
       >
         {theme === "light" ? (
-          <MdOutlineWbSunny size={18} color="white" />
-        ) : (
           <MdNightlightRound size={18} color="white" />
+        ) : (
+          <MdOutlineWbSunny size={18} color="white" />
         )}
       </div>
       <Polygon />
