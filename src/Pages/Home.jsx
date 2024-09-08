@@ -8,11 +8,17 @@ import { MdNightlightRound } from "react-icons/md";
 import "./Home.css";
 import Transition from "../Transition";
 import { Link } from "react-router-dom";
-// import { useStores } from "../contexts/storeContext";
+import MenuDropDown from "../Components/MenuDropdown";
+import { IoClose } from "react-icons/io5";
+import { MdMenu } from "react-icons/md";
+import { useStores } from "../contexts/storeContext";
 
 function Home({ theme, toggleTheme }) {
+  const { isOpen, handleIsOpen } = useStores();
+
   return (
     <div className="w-full h-screen z-30 phone:w-full">
+      <MenuDropDown />
       <div
         onClick={toggleTheme}
         className={`absolute top-12 right-7 z-50 ${
@@ -26,6 +32,18 @@ function Home({ theme, toggleTheme }) {
         )}
       </div>
       <Polygon />
+      <div
+        onClick={() => handleIsOpen()}
+        className={`${
+          theme === "light" ? " bg-stone-400" : "bg-stone-800"
+        } absolute top-12 phone:top-4 right-7 phone:right-5 z-[5000] p-4 rounded-full hover:cursor-pointer hover:bg-amber-500 laptop:w-0 laptop:opacity-0`}
+      >
+        {isOpen ? (
+          <IoClose size={20} color="white" />
+        ) : (
+          <MdMenu size={20} color="white" />
+        )}
+      </div>
       <Navbar theme={theme} />
       <div className="grid grid-cols-1fr-2fr gap-0 h-full w-full z-30 phone:grid-cols-1 laptop:grid-cols-1fr-2fr">
         <div className="self-center justify-self-start z-30 phone:justify-self-center phone:ml-0 laptop:justify-self-start laptop:ml-10 z-30 ">

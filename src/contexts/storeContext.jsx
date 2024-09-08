@@ -5,8 +5,21 @@ const StoreContext = createContext();
 
 function StoreProvider({ children }) {
   const [activeSection, setActiveSection] = useState("technic");
+  const [isOpen, setIsOpen] = useState(false);
+
+  function handleIsOpen() {
+    setIsOpen(!isOpen);
+  }
   return (
-    <StoreContext.Provider value={{ activeSection, setActiveSection }}>
+    <StoreContext.Provider
+      value={{
+        activeSection,
+        setActiveSection,
+        isOpen,
+        setIsOpen,
+        handleIsOpen,
+      }}
+    >
       {children}
     </StoreContext.Provider>
   );

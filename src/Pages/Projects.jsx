@@ -4,10 +4,16 @@ import { MdOutlineWbSunny } from "react-icons/md";
 import { MdNightlightRound } from "react-icons/md";
 import "./projects.css";
 import Transition from "../Transition";
+import MenuDropDown from "../Components/MenuDropdown";
+import { IoClose } from "react-icons/io5";
+import { MdMenu } from "react-icons/md";
+import { useStores } from "../contexts/storeContext";
 
 function Projects({ theme, toggleTheme }) {
+  const { isOpen, handleIsOpen } = useStores();
   return (
     <div className="h-full w-full">
+      <MenuDropDown />
       <div
         onClick={toggleTheme}
         className={`absolute top-12 right-7 z-50 ${
@@ -18,6 +24,18 @@ function Projects({ theme, toggleTheme }) {
           <MdOutlineWbSunny size={18} color="white" />
         ) : (
           <MdNightlightRound size={18} color="white" />
+        )}
+      </div>
+      <div
+        onClick={() => handleIsOpen()}
+        className={`${
+          theme === "light" ? " bg-stone-400" : "bg-stone-800"
+        } absolute top-12 phone:top-4 right-7 phone:right-5 z-[5000] p-4 rounded-full hover:cursor-pointer hover:bg-amber-500 laptop:w-0 laptop:opacity-0`}
+      >
+        {isOpen ? (
+          <IoClose size={20} color="white" />
+        ) : (
+          <MdMenu size={20} color="white" />
         )}
       </div>
       <Navbar theme={theme} />,

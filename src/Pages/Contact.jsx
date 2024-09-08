@@ -14,8 +14,13 @@ import "./contact.css";
 import { useState } from "react";
 import { FaGithub } from "react-icons/fa";
 import Transition from "../Transition";
+import MenuDropDown from "../Components/MenuDropdown";
+import { IoClose } from "react-icons/io5";
+import { MdMenu } from "react-icons/md";
+import { useStores } from "../contexts/storeContext";
 
 function Contact({ theme, toggleTheme }) {
+  const { isOpen, handleIsOpen } = useStores();
   const [name, setName] = useState("");
   console.log(theme);
   // const [subject, setSubject] = useState("");
@@ -51,6 +56,7 @@ function Contact({ theme, toggleTheme }) {
   };
   return (
     <div className="w-full h-full">
+      <MenuDropDown />
       <div
         onClick={toggleTheme}
         className={`absolute top-12 right-7 z-50 ${
@@ -63,8 +69,20 @@ function Contact({ theme, toggleTheme }) {
           <MdNightlightRound size={18} color="white" />
         )}
       </div>
+      <div
+        onClick={() => handleIsOpen()}
+        className={`${
+          theme === "light" ? " bg-stone-400" : "bg-stone-800"
+        } absolute top-12 phone:top-4 right-7 phone:right-5 z-[5000] p-4 rounded-full hover:cursor-pointer hover:bg-amber-500 laptop:w-0 laptop:opacity-0`}
+      >
+        {isOpen ? (
+          <IoClose size={20} color="white" />
+        ) : (
+          <MdMenu size={20} color="white" />
+        )}
+      </div>
       <Navbar theme={theme} />
-      <div className="relative contact-container py-20 phone:py-10 tablet:py-20 laptop:py-2">
+      <div className="relative contact-container py-20 phone:py-10 phone:pt-16 mdphone:pt-10 tablet:py-20 laptop:py-2">
         <h1 className="relative font-poppins text-6xl text-center uppercase font-extrabold phone:text-3xl ptab:text-5xl laptop:text-6xl laptop:my-16">
           get in<span className="text-yellow-500 font-poppins"> touch</span>
         </h1>
@@ -100,7 +118,7 @@ function Contact({ theme, toggleTheme }) {
               <p className="font-poppins font-bold">+251916163516</p>
             </div>
           </div>
-          <div className="flex gap-4 mt-2 ">
+          <div className="flex phone:gap-[6px] mdphone:gap-4 mt-2 ">
             <a
               href="https://www.linkedin.com/in/kaleab-gemechu-456ab9259/"
               target="_blank"
