@@ -63,12 +63,16 @@ To get a local copy up and running, follow these steps.
 This project is hosted on Vercel for fast and reliable deployment. To deploy your own version:
 
  1.Sign up on Vercel.
+ 
  2.Connect Your GitHub Repository.
+ 
  3.Deploy directly from the Vercel dashboard.
 
 ### 📬 Contact
 
  1.Email: kgemechu908@gmail.com
+ 
  2.LinkedIn: [Your LinkedIn Profile](https://www.linkedin.com/in/kaleab-gemechu-456ab9259/)
+ 
  3.GitHub:[ @yourusername](https://github.com/kalolani)
  
