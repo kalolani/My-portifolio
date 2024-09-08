@@ -58,7 +58,8 @@ To get a local copy up and running, follow these steps.
 
 2.Open your browser and navigate to http://localhost:3000 to view the site locally.
 
-###🚀 Deployment
+
+### 🚀 Deployment
 
 This project is hosted on Vercel for fast and reliable deployment. To deploy your own version:
 
@@ -75,4 +76,11 @@ This project is hosted on Vercel for fast and reliable deployment. To deploy you
  2.LinkedIn: [Your LinkedIn Profile](https://www.linkedin.com/in/kaleab-gemechu-456ab9259/)
  
  3.GitHub:[ @yourusername](https://github.com/kalolani)
+
+ ### 📷 Screenshots
+
+![Frontend Screenshot](https://imgur.com/71FAMRw)
+![Frontend Screenshot](https://imgur.com/wq5NUKt)
+![Frontend Screenshot](https://imgur.com/ngUrmiB)
+![Frontend Screenshot](https://imgur.com/Ppr0yJu)
  
