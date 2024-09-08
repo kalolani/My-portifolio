@@ -44,32 +44,31 @@ To get a local copy up and running, follow these steps.
    cd your-portfolio
 2. **Install dependecies:**
 
-  npm install
-# or
-yarn install
+   ```bash
+   npm install
+   yarn install
 
-
-## 🚀 Usage
+### 🚀 Usage
 
 1. **Start the development server:**
    
-npm start
-# or
-yarn start
+    ```bash
+    npm start
+    yarn start
 
 2.Open your browser and navigate to http://localhost:3000 to view the site locally.
 
-#🚀 Deployment
+###🚀 Deployment
 
 This project is hosted on Vercel for fast and reliable deployment. To deploy your own version:
 
- 1.**Sign up on Vercel.**
- 2.**Connect Your GitHub Repository.**
- 3.**Deploy directly from the Vercel dashboard.**
+ 1.Sign up on Vercel.
+ 2.Connect Your GitHub Repository.
+ 3.Deploy directly from the Vercel dashboard.
 
-# 📬 Contact
+### 📬 Contact
 
- 1.Email: yourname@example.com
- 2.LinkedIn: Your LinkedIn Profile
- 3.GitHub: @yourusername
+ 1.Email: kgemechu908@gmail.com
+ 2.LinkedIn: [Your LinkedIn Profile](https://www.linkedin.com/in/kaleab-gemechu-456ab9259/)
+ 3.GitHub:[ @yourusername](https://github.com/kalolani)
  
