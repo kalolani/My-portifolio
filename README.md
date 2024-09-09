@@ -73,9 +73,9 @@ This project is hosted on Vercel for fast and reliable deployment. To deploy you
 
  1.Email: kgemechu908@gmail.com
  
- 2.LinkedIn: [Your LinkedIn Profile](https://www.linkedin.com/in/kaleab-gemechu-456ab9259/)
+ 2.LinkedIn: [Kaleab Gemechu](https://www.linkedin.com/in/kaleab-gemechu-456ab9259/)
  
- 3.GitHub:[ @yourusername](https://github.com/kalolani)
+ 3.GitHub:[ @kal_olani](https://github.com/kalolani)
 
  ### 📷 Screenshots
 
