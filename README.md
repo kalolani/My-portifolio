@@ -13,8 +13,8 @@ Check out the live version of my portfolio [here](https://kal-portifolio.vercel.
 - [Getting Started](#getting-started)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Screenshots](#screenshots)
 - [Contact](#contact)
+- [Screenshots](#screenshots)
 
 ## ✨ Features
 
