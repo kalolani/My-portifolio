@@ -82,5 +82,6 @@ This project is hosted on Vercel for fast and reliable deployment. To deploy you
 ![Frontend Screenshot](https://imgur.com/a/Qw4uHir)
 ![Frontend Screenshot](https://imgur.com/a/rcKD95V)
 ![Frontend Screenshot](https://imgur.com/a/TvY9QNJ)
-![Frontend Screenshot](https://imgur.com/a/vt4hs1J)
+![Frontend Screenshot](![image](https://github.com/user-attachments/assets/b162d332-0a28-45e6-b4d0-bc2614cd8254)
+)
  
