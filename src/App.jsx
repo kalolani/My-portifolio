@@ -22,7 +22,7 @@ const Container = styled.div`
 
 function App() {
   const [showLogin, setShowLogin] = useState(false);
-  const [theme, setTheme] = useState(localStorage.getItem("theme") || "dark");
+  const [theme, setTheme] = useState(localStorage.getItem("theme") || "light");
   useEffect(() => {
     localStorage.setItem("theme", theme);
   }, [theme]);
