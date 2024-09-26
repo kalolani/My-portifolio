@@ -184,17 +184,17 @@ function Projects({ theme, toggleTheme }) {
             {" "}
             <div className="absolute bg-amber-500 bg-opacity-85 w-full h-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 scale-0 opacity-0 group-hover:scale-110 group-hover:opacity-100 grid items-center justify-items-center transition-all duration-[500ms] origin-center">
               <p className="font-poppins uppercase w-3/4 self-center text-center">
-                landing page for tour organizer company
+                website for abbysinia software solutions
               </p>
               <a
-                href="https://kal-natours-project.netlify.app/"
+                href="https://abyssinia-coral.vercel.app/"
                 target="_blank"
                 className="uppercase inline-block px-6 py-2 border bg-amber-700 hover:bg-amber-950 rounded-sm justify-self-center m-0"
               >
                 visit
               </a>
             </div>
-            <img src="../natours.PNG" className="z-0 scale-down-up" />
+            <img src="../abby.PNG" className="z-0 scale-down-up" />
           </div>
         </div>
       </div>
