@@ -64,21 +64,22 @@ function Projects({ theme, toggleTheme }) {
               className="z-0 scale-down-up img overflow-hidden"
             />
           </div>
-          <div className="group z-0 relative parent rounded-md border-2 border-amber-500 overflow-hidden  hover:cursor-pointer ">
+
+          <div className="group relative parent rounded-md border-2 border-amber-500 overflow-hidden  hover:cursor-pointer">
             {" "}
             <div className="absolute bg-amber-500 bg-opacity-85 w-full h-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 scale-0 opacity-0 group-hover:scale-110 group-hover:opacity-100 grid items-center justify-items-center transition-all duration-[500ms] origin-center">
               <p className="font-poppins uppercase w-3/4 self-center text-center">
-                landing page for real estate company
+                website for abbysinia software solutions
               </p>
               <a
-                href="https://kal-nexter.netlify.app/"
+                href="https://abyssinia-coral.vercel.app/"
                 target="_blank"
                 className="uppercase inline-block px-6 py-2 border bg-amber-700 hover:bg-amber-950 rounded-sm justify-self-center m-0"
               >
                 visit
               </a>
             </div>
-            <img src="../nexter.PNG" className="z-0 scale-down-up" />
+            <img src="../abby.PNG" className="z-0 scale-down-up" />
           </div>
           <div className="group z-0 relative parent rounded-md border-2 border-amber-500 overflow-hidden  hover:cursor-pointer">
             {" "}
@@ -180,21 +181,21 @@ function Projects({ theme, toggleTheme }) {
             </div>
             <img src="../weather.PNG" className="z-0 scale-down-up" />
           </div>
-          <div className="group relative parent rounded-md border-2 border-amber-500 overflow-hidden  hover:cursor-pointer">
+          <div className="group z-0 relative parent rounded-md border-2 border-amber-500 overflow-hidden  hover:cursor-pointer ">
             {" "}
             <div className="absolute bg-amber-500 bg-opacity-85 w-full h-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 scale-0 opacity-0 group-hover:scale-110 group-hover:opacity-100 grid items-center justify-items-center transition-all duration-[500ms] origin-center">
               <p className="font-poppins uppercase w-3/4 self-center text-center">
-                website for abbysinia software solutions
+                landing page for real estate company
               </p>
               <a
-                href="https://abyssinia-coral.vercel.app/"
+                href="https://kal-nexter.netlify.app/"
                 target="_blank"
                 className="uppercase inline-block px-6 py-2 border bg-amber-700 hover:bg-amber-950 rounded-sm justify-self-center m-0"
               >
                 visit
               </a>
             </div>
-            <img src="../abby.PNG" className="z-0 scale-down-up" />
+            <img src="../nexter.PNG" className="z-0 scale-down-up" />
           </div>
         </div>
       </div>
